@@ -573,14 +573,14 @@ body:not(.res-nightmode) .footer.rounded {
 }
 
 /* Link Flair */
-.flair-announce .linkflairlabel {
+.linkflair-announce .linkflairlabel {
     border: 0;
     background-color: transparent;
     color: red;
     font-size: inherit;
     text-shadow: 1px 1px 3px #ccc;
 }
-.flair-event .linkflairlabel {
+.linkflair-event .linkflairlabel {
     border: 0;
     background-color: transparent;
     color: #13A000;
@@ -593,6 +593,7 @@ body:not(.res-nightmode) .linkflairlabel + a.title {
 }
 body:not(.res-nightmode) .linkflairlabel + a.title:visited {
     color: orangered !important;
+    text-shadow: none;
 }
 
 
