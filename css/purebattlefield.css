@@ -326,6 +326,11 @@ body:not(.res-nightmode) .footer.rounded {
     background-color: #fff;
     opacity: 0.9;
 }
+.bottommenu {
+    color: black;
+    font-size: smaller;
+    clear: both;
+}
 
 
 
@@ -561,20 +566,21 @@ body:not(.res-nightmode) .footer.rounded {
 .id-t2_5687g::before
 { content: ''; display: inline-block; width: 32px; height: 10px; background: url(%%badges%%) 0 0 no-repeat; }
 
+/* Shows image displaying all flair */
 .linefield.flair-jump::after {
     display: block;
     content: url(%%titles%%);
 }
 
-/* Link Announcement Flair */
-.linkflairlabel {
+/* Link Flair */
+.flair-announce .linkflairlabel {
     border: 0;
     background-color: transparent;
     color: red;
     font-size: inherit;
     text-shadow: 1px 1px 3px #ccc;
 }
-.flair-event {
+.flair-event .linkflairlabel {
     border: 0;
     background-color: transparent;
     color: #13A000;
