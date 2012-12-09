@@ -320,7 +320,6 @@ body:not(.res-nightmode) .side .md h4 {
    ==================================== */
 
 body:not(.res-nightmode) .footer-parent {
-    height: 1050px;
     background: url(%%footerbf%%) bottom center no-repeat;
 }
 body:not(.res-nightmode) .footer.rounded {
