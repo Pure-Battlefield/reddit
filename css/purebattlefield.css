@@ -578,7 +578,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-event {
     border: 0;
     background-color: transparent;
-    color: #13A000 !important;
+    color: #13A000;
     font-size: inherit;
     text-shadow: 1px 1px 3px #ccc;
 }
