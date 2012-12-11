@@ -551,15 +551,16 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RANKS */
 
-.flair-private, .flair-sergeant, .flair-lieutenant, .flair-capitan, .flair-major, .flair-general {
+.flair-private, .flair-sergeant, .flair-lieutenant, .flair-capitan, .flair-major, .flair-lt-colonel, .flair-general {
     background: url(%%ranks%%) 3px -1px no-repeat;
 }
 
 .flair-sergeant   { background-position: 3px  -41px; }
-.flair-lieutenant { background-position: 3px  -81px; }
+.flair-lieutenant { background-position: 3px  -80px; }
 .flair-capitan    { background-position: 3px -120px; }
 .flair-major      { background-position: 3px -159px; }
-.flair-general    { background-position: 3px -199px; }
+.flair-lt-colonel { background-position: 3px -198px; }
+.flair-general    { background-position: 3px -239px; }
 
 /* DICE and EA employees */
 
