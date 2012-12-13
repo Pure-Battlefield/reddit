@@ -551,13 +551,13 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RANKS */
 
-.flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general {
+.flair-private, .flair-sergeant, .flair-lieutenant, .flair-capitan, .flair-major, .flair-lt-colonel, .flair-general {
     background: url(%%ranks%%) 3px 1px no-repeat;
 }
 
 .flair-sergeant   { background-position: 3px  -39px; }
 .flair-lieutenant { background-position: 3px  -79px; }
-.flair-captain    { background-position: 3px -117px; }
+.flair-capitan    { background-position: 3px -117px; }
 .flair-major      { background-position: 3px -157px; }
 .flair-lt-colonel { background-position: 3px -196px; }
 .flair-general    { background-position: 3px -239px; }
@@ -614,6 +614,7 @@ a[href$='#developer'] { content: url(%%developer%%); }
 a[href$='#promoter'] { content: url(%%promoter%%); }
 a[href$='#coordinator'] { content: url(%%coordinator%%); }
 a[href$='#special'] { content: url(%%special%%); }
+a[href$='#lead'] { content: url(%%volunteer-lead%%); }
 
 /* Messages */
 body:not(.res-nightmode).comments-page > .content::before, body:not(.res-nightmode).listing-page > .content::before {
