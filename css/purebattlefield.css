@@ -354,7 +354,7 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RIBBONS */
 
-.flair-admin::after, .flair-webmaster::after, .flair-operations::after, .flair-developer::after, .flair-promoter::after, .flair-coordinator::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-volunteer-lead::after, .flair-medal-of-honor::after {
+.flair-admin::after, .flair-webmaster::after, .flair-operations::after, .flair-developer::after, .flair-community::after, .flair-coordinator::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-volunteer-lead::after, .flair-medal-of-honor::after {
     line-height: 18px; font-size: 18px;
 }
 
@@ -362,7 +362,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-webmaster::after { content: url(%%webmaster%%); }
 .flair-operations::after { content: url(%%operations%%); }
 .flair-developer::after { content: url(%%developer%%); }
-.flair-promoter::after { content: url(%%promoter%%); }
+.flair-community::after { content: url(%%community%%); }
 .flair-coordinator::after { content: url(%%coordinator%%); }
 .flair-special::after { content: url(%%special%%); }
 .flair-bronze-star::after { content: url(%%bronze-star%%); }
@@ -375,7 +375,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-webmaster::after { content: url(%%admin%%) url(%%webmaster%%); }
 .flair-admin.flair-operations::after { content: url(%%admin%%) url(%%operations%%); }
 .flair-admin.flair-developer::after { content: url(%%admin%%) url(%%developer%%); }
-.flair-admin.flair-promoter::after { content: url(%%admin%%) url(%%promoter%%); }
+.flair-admin.flair-community::after { content: url(%%admin%%) url(%%community%%); }
 .flair-admin.flair-coordinator::after { content: url(%%admin%%) url(%%coordinator%%); }
 .flair-admin.flair-special::after { content: url(%%admin%%) url(%%special%%); }
 .flair-admin.flair-bronze-star::after { content: url(%%admin%%) url(%%bronze-star%%); }
@@ -386,7 +386,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-medal-of-honor::after { content: url(%%admin%%) url(%%medal-of-honor%%); }
 .flair-admin.flair-webmaster.flair-operations::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%); }
 .flair-admin.flair-webmaster.flair-developer::after { content: url(%%admin%%) url(%%webmaster%%) url(%%developer%%); }
-.flair-admin.flair-webmaster.flair-promoter::after { content: url(%%admin%%) url(%%webmaster%%) url(%%promoter%%); }
+.flair-admin.flair-webmaster.flair-community::after { content: url(%%admin%%) url(%%webmaster%%) url(%%community%%); }
 .flair-admin.flair-webmaster.flair-coordinator::after { content: url(%%admin%%) url(%%webmaster%%) url(%%coordinator%%); }
 .flair-admin.flair-webmaster.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%special%%); }
 .flair-admin.flair-webmaster.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%bronze-star%%); }
@@ -396,7 +396,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-webmaster.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%volunteer-lead%%); }
 .flair-admin.flair-webmaster.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%medal-of-honor%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-developer::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-promoter::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%promoter%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-community::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%community%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-coordinator::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%coordinator%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%special%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%bronze-star%%); }
@@ -405,7 +405,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-webmaster.flair-operations.flair-commendation::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%commendation%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%volunteer-lead%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-developer.flair-coordinator::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%coordinator%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-developer.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%special%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
@@ -414,25 +414,25 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-webmaster.flair-operations.flair-developer.flair-commendation::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-developer.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%volunteer-lead%%); }
 .flair-admin.flair-webmaster.flair-operations.flair-developer.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%special%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%bronze-star%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-silver-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%silver-star%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-distinguished-service::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%distinguished-service%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-commendation::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%commendation%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%volunteer-lead%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%special%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%bronze-star%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-silver-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%silver-star%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-distinguished-service::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%distinguished-service%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-commendation::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%commendation%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
-.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%special%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%bronze-star%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-silver-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%silver-star%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-distinguished-service::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%distinguished-service%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-commendation::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%commendation%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%volunteer-lead%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%medal-of-honor%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-special::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%special%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-bronze-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%bronze-star%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-silver-star::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%silver-star%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-distinguished-service::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%distinguished-service%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-commendation::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%commendation%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-volunteer-lead::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
+.flair-admin.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-medal-of-honor::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
 
 .flair-webmaster.flair-operations::after { content: url(%%webmaster%%) url(%%operations%%); }
 .flair-webmaster.flair-developer::after { content: url(%%webmaster%%) url(%%developer%%); }
-.flair-webmaster.flair-promoter::after { content: url(%%webmaster%%) url(%%promoter%%); }
+.flair-webmaster.flair-community::after { content: url(%%webmaster%%) url(%%community%%); }
 .flair-webmaster.flair-coordinator::after { content: url(%%webmaster%%) url(%%coordinator%%); }
 .flair-webmaster.flair-special::after { content: url(%%webmaster%%) url(%%special%%); }
 .flair-webmaster.flair-bronze-star::after { content: url(%%webmaster%%) url(%%bronze-star%%); }
@@ -442,7 +442,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-webmaster.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%volunteer-lead%%); }
 .flair-webmaster.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%medal-of-honor%%); }
 .flair-webmaster.flair-operations.flair-developer::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%); }
-.flair-webmaster.flair-operations.flair-promoter::after { content: url(%%webmaster%%) url(%%operations%%) url(%%promoter%%); }
+.flair-webmaster.flair-operations.flair-community::after { content: url(%%webmaster%%) url(%%operations%%) url(%%community%%); }
 .flair-webmaster.flair-operations.flair-coordinator::after { content: url(%%webmaster%%) url(%%operations%%) url(%%coordinator%%); }
 .flair-webmaster.flair-operations.flair-special::after { content: url(%%webmaster%%) url(%%operations%%) url(%%special%%); }
 .flair-webmaster.flair-operations.flair-bronze-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%bronze-star%%); }
@@ -451,7 +451,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-webmaster.flair-operations.flair-commendation::after { content: url(%%webmaster%%) url(%%operations%%) url(%%commendation%%); }
 .flair-webmaster.flair-operations.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%operations%%) url(%%volunteer-lead%%); }
 .flair-webmaster.flair-operations.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%operations%%) url(%%medal-of-honor%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%); }
 .flair-webmaster.flair-operations.flair-developer.flair-coordinator::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%coordinator%%); }
 .flair-webmaster.flair-operations.flair-developer.flair-special::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%special%%); }
 .flair-webmaster.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
@@ -460,24 +460,24 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-webmaster.flair-operations.flair-developer.flair-commendation::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
 .flair-webmaster.flair-operations.flair-developer.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%volunteer-lead%%); }
 .flair-webmaster.flair-operations.flair-developer.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-special::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%special%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-bronze-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%bronze-star%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-silver-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%silver-star%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-distinguished-service::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%distinguished-service%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-commendation::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%commendation%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%volunteer-lead%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%medal-of-honor%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-special::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%special%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-bronze-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%bronze-star%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-silver-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%silver-star%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-distinguished-service::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%distinguished-service%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-commendation::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%commendation%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
-.flair-webmaster.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-special::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%special%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-bronze-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%bronze-star%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-silver-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%silver-star%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-distinguished-service::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%distinguished-service%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-commendation::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%commendation%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%volunteer-lead%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%medal-of-honor%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-special::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%special%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-bronze-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%bronze-star%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-silver-star::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%silver-star%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-distinguished-service::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%distinguished-service%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-commendation::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%commendation%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-volunteer-lead::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
+.flair-webmaster.flair-operations.flair-developer.flair-community.flair-coordinator.flair-medal-of-honor::after { content: url(%%webmaster%%) url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
 
 .flair-operations.flair-developer::after { content: url(%%operations%%) url(%%developer%%); }
-.flair-operations.flair-promoter::after { content: url(%%operations%%) url(%%promoter%%); }
+.flair-operations.flair-community::after { content: url(%%operations%%) url(%%community%%); }
 .flair-operations.flair-coordinator::after { content: url(%%operations%%) url(%%coordinator%%); }
 .flair-operations.flair-special::after { content: url(%%operations%%) url(%%special%%); }
 .flair-operations.flair-bronze-star::after { content: url(%%operations%%) url(%%bronze-star%%); }
@@ -486,7 +486,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-operations.flair-commendation::after { content: url(%%operations%%) url(%%commendation%%); }
 .flair-operations.flair-volunteer-lead::after { content: url(%%operations%%) url(%%volunteer-lead%%); }
 .flair-operations.flair-medal-of-honor::after { content: url(%%operations%%) url(%%medal-of-honor%%); }
-.flair-operations.flair-developer.flair-promoter::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%); }
+.flair-operations.flair-developer.flair-community::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%); }
 .flair-operations.flair-developer.flair-coordinator::after { content: url(%%operations%%) url(%%developer%%) url(%%coordinator%%); }
 .flair-operations.flair-developer.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%special%%); }
 .flair-operations.flair-developer.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
@@ -495,23 +495,23 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-operations.flair-developer.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
 .flair-operations.flair-developer.flair-volunteer-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%volunteer-lead%%); }
 .flair-operations.flair-developer.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%); }
-.flair-operations.flair-developer.flair-promoter.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%special%%); }
-.flair-operations.flair-developer.flair-promoter.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%bronze-star%%); }
-.flair-operations.flair-developer.flair-promoter.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%silver-star%%); }
-.flair-operations.flair-developer.flair-promoter.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%distinguished-service%%); }
-.flair-operations.flair-developer.flair-promoter.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%commendation%%); }
-.flair-operations.flair-developer.flair-promoter.flair-volunteer-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%volunteer-lead%%); }
-.flair-operations.flair-developer.flair-promoter.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%medal-of-honor%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%special%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%bronze-star%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%silver-star%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%distinguished-service%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%commendation%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-volunteer-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
-.flair-operations.flair-developer.flair-promoter.flair-coordinator.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%); }
+.flair-operations.flair-developer.flair-community.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%special%%); }
+.flair-operations.flair-developer.flair-community.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%bronze-star%%); }
+.flair-operations.flair-developer.flair-community.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%silver-star%%); }
+.flair-operations.flair-developer.flair-community.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%distinguished-service%%); }
+.flair-operations.flair-developer.flair-community.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%commendation%%); }
+.flair-operations.flair-developer.flair-community.flair-volunteer-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%volunteer-lead%%); }
+.flair-operations.flair-developer.flair-community.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%medal-of-honor%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%special%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%bronze-star%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%silver-star%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%distinguished-service%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%commendation%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-volunteer-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
+.flair-operations.flair-developer.flair-community.flair-coordinator.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
 
-.flair-developer.flair-promoter::after { content: url(%%developer%%) url(%%promoter%%); }
+.flair-developer.flair-community::after { content: url(%%developer%%) url(%%community%%); }
 .flair-developer.flair-coordinator::after { content: url(%%developer%%) url(%%coordinator%%); }
 .flair-developer.flair-special::after { content: url(%%developer%%) url(%%special%%); }
 .flair-developer.flair-bronze-star::after { content: url(%%developer%%) url(%%bronze-star%%); }
@@ -520,25 +520,25 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-developer.flair-commendation::after { content: url(%%developer%%) url(%%commendation%%); }
 .flair-developer.flair-volunteer-lead::after { content: url(%%developer%%) url(%%volunteer-lead%%); }
 .flair-developer.flair-medal-of-honor::after { content: url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-developer.flair-promoter.flair-coordinator::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%); }
-.flair-developer.flair-promoter.flair-special::after { content: url(%%developer%%) url(%%promoter%%) url(%%special%%); }
-.flair-developer.flair-promoter.flair-bronze-star::after { content: url(%%developer%%) url(%%promoter%%) url(%%bronze-star%%); }
-.flair-developer.flair-promoter.flair-silver-star::after { content: url(%%developer%%) url(%%promoter%%) url(%%silver-star%%); }
-.flair-developer.flair-promoter.flair-distinguished-service::after { content: url(%%developer%%) url(%%promoter%%) url(%%distinguished-service%%); }
-.flair-developer.flair-promoter.flair-commendation::after { content: url(%%developer%%) url(%%promoter%%) url(%%commendation%%); }
-.flair-developer.flair-promoter.flair-volunteer-lead::after { content: url(%%developer%%) url(%%promoter%%) url(%%volunteer-lead%%); }
-.flair-developer.flair-promoter.flair-medal-of-honor::after { content: url(%%developer%%) url(%%promoter%%) url(%%medal-of-honor%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-special::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%special%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-bronze-star::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%bronze-star%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-silver-star::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%silver-star%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-distinguished-service::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%distinguished-service%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-commendation::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%commendation%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-volunteer-lead::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
-.flair-developer.flair-promoter.flair-coordinator.flair-medal-of-honor::after { content: url(%%developer%%) url(%%promoter%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
+.flair-developer.flair-community.flair-coordinator::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%); }
+.flair-developer.flair-community.flair-special::after { content: url(%%developer%%) url(%%community%%) url(%%special%%); }
+.flair-developer.flair-community.flair-bronze-star::after { content: url(%%developer%%) url(%%community%%) url(%%bronze-star%%); }
+.flair-developer.flair-community.flair-silver-star::after { content: url(%%developer%%) url(%%community%%) url(%%silver-star%%); }
+.flair-developer.flair-community.flair-distinguished-service::after { content: url(%%developer%%) url(%%community%%) url(%%distinguished-service%%); }
+.flair-developer.flair-community.flair-commendation::after { content: url(%%developer%%) url(%%community%%) url(%%commendation%%); }
+.flair-developer.flair-community.flair-volunteer-lead::after { content: url(%%developer%%) url(%%community%%) url(%%volunteer-lead%%); }
+.flair-developer.flair-community.flair-medal-of-honor::after { content: url(%%developer%%) url(%%community%%) url(%%medal-of-honor%%); }
+.flair-developer.flair-community.flair-coordinator.flair-special::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%special%%); }
+.flair-developer.flair-community.flair-coordinator.flair-bronze-star::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%bronze-star%%); }
+.flair-developer.flair-community.flair-coordinator.flair-silver-star::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%silver-star%%); }
+.flair-developer.flair-community.flair-coordinator.flair-distinguished-service::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%distinguished-service%%); }
+.flair-developer.flair-community.flair-coordinator.flair-commendation::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%commendation%%); }
+.flair-developer.flair-community.flair-coordinator.flair-volunteer-lead::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%volunteer-lead%%); }
+.flair-developer.flair-community.flair-coordinator.flair-medal-of-honor::after { content: url(%%developer%%) url(%%community%%) url(%%coordinator%%) url(%%medal-of-honor%%); }
 
-.flair-promoter.flair-coordinator::after { content: url(%%promoter%%) url(%%coordinator%%); }
-.flair-promoter.flair-special::after { content: url(%%promoter%%) url(%%special%%); }
-.flair-promoter.flair-coordinator.flair-special::after { content: url(%%promoter%%) url(%%coordinator%%) url(%%special%%); }
+.flair-community.flair-coordinator::after { content: url(%%community%%) url(%%coordinator%%); }
+.flair-community.flair-special::after { content: url(%%community%%) url(%%special%%); }
+.flair-community.flair-coordinator.flair-special::after { content: url(%%community%%) url(%%coordinator%%) url(%%special%%); }
 
 .flair-coordinator.flair-special::after { content: url(%%coordinator%%) url(%%special%%); }
 .flair-coordinator.flair-bronze-star::after { content: url(%%coordinator%%) url(%%bronze-star%%); }
@@ -611,7 +611,7 @@ a[href$='#admin'] { content: url(%%admin%%); }
 a[href$='#webmaster'] { content: url(%%webmaster%%); }
 a[href$='#operations'] { content: url(%%operations%%); }
 a[href$='#developer'] { content: url(%%developer%%); }
-a[href$='#promoter'] { content: url(%%promoter%%); }
+a[href$='#community'] { content: url(%%community%%); }
 a[href$='#coordinator'] { content: url(%%coordinator%%); }
 a[href$='#special'] { content: url(%%special%%); }
 a[href$='#lead'] { content: url(%%volunteer-lead%%); }
