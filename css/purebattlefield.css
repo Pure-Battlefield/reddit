@@ -384,7 +384,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-commendation::after { content: url(%%admin%%) url(%%commendation%%); }
 .flair-admin.flair-lead::after { content: url(%%admin%%) url(%%lead%%); }
 .flair-admin.flair-medal-of-honor::after { content: url(%%admin%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-developer.flair-lead::after { content: url(%%developer%%) url(%%lead%%); }
+.flair-admin.flair-developer.flair-lead::after { content: url(%%admin%%) url(%%developer%%) url(%%lead%%); }
 .flair-admin.flair-webmaster.flair-operations::after { content: url(%%admin%%) url(%%webmaster%%) url(%%operations%%); }
 .flair-admin.flair-webmaster.flair-developer::after { content: url(%%admin%%) url(%%webmaster%%) url(%%developer%%); }
 .flair-admin.flair-webmaster.flair-community::after { content: url(%%admin%%) url(%%webmaster%%) url(%%community%%); }
@@ -552,13 +552,13 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RANKS */
 
-.flair-private, .flair-sergeant, .flair-lieutenant, .flair-capitan, .flair-major, .flair-lt-colonel, .flair-general {
+.flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general {
     background: url(%%ranks%%) 3px 1px no-repeat;
 }
 
 .flair-sergeant   { background-position: 3px  -39px; }
 .flair-lieutenant { background-position: 3px  -79px; }
-.flair-capitan    { background-position: 3px -117px; }
+.flair-captain    { background-position: 3px -117px; }
 .flair-major      { background-position: 3px -157px; }
 .flair-lt-colonel { background-position: 3px -196px; }
 .flair-general    { background-position: 3px -239px; }
