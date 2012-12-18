@@ -540,7 +540,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-community.flair-coordinator::after { content: url(%%community%%) url(%%coordinator%%); }
 .flair-community.flair-special::after { content: url(%%community%%) url(%%special%%); }
 .flair-community.flair-coordinator.flair-special::after { content: url(%%community%%) url(%%coordinator%%) url(%%special%%); }
-
 .flair-coordinator.flair-special::after { content: url(%%coordinator%%) url(%%special%%); }
 .flair-coordinator.flair-bronze-star::after { content: url(%%coordinator%%) url(%%bronze-star%%); }
 .flair-coordinator.flair-silver-star::after { content: url(%%coordinator%%) url(%%silver-star%%); }
@@ -548,6 +547,11 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-coordinator.flair-commendation::after { content: url(%%coordinator%%) url(%%commendation%%); }
 .flair-coordinator.flair-lead::after { content: url(%%coordinator%%) url(%%lead%%); }
 .flair-coordinator.flair-medal-of-honor::after { content: url(%%coordinator%%) url(%%medal-of-honor%%); }
+
+/* Custom ribbon flair */
+/* Generally needed if user flair is greater than two ribbons */
+
+.flair-developer.flair-lead.flair-admin::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%); } /* UGTA (Webs961) */
 
 
 /* RANKS */
