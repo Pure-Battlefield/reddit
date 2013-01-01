@@ -621,7 +621,7 @@ a[href$='#coordinator'] { content: url(%%coordinator%%); }
 a[href$='#special'] { content: url(%%special%%); }
 a[href$='#lead'] { content: url(%%lead%%); }
 
-/* Messages */
+/* Sticky announcement */
 body:not(.res-nightmode).comments-page > .content::before, body:not(.res-nightmode).listing-page > .content::before {
     display: block;
     background: #ddd;
@@ -637,9 +637,15 @@ body:not(.res-nightmode).comments-page > .content::before, body:not(.res-nightmo
     -moz-border-top-right-radius: 7px;
     border-top-right-radius: 7px;
 }
-body:not(.logged-in).comments-page > .content::before, body:not(.logged-in).listing-page > .content::before { content: 'Log in and join the communications!'; }
-body:not(.subscriber).comments-page > .content::before, body:not(.subscriber).listing-page > .content::before { content: 'Make sure to subscribe for updates and news!'; }
-body.subscriber.comments-page > .content::before, body.subscriber.listing-page > .content::before { content: 'Thanks for subscribing! Check back for more updates.'; }
+body:not(.logged-in).comments-page > .content::before, body:not(.logged-in).listing-page > .content::before {
+    content: 'Log in and join the communications!';
+}
+body:not(.subscriber).comments-page > .content::before, body:not(.subscriber).listing-page > .content::before {
+    content: 'Make sure to subscribe for updates and news!';
+}
+body.subscriber.comments-page > .content::before, body.subscriber.listing-page > .content::before {
+    content: 'Thanks for subscribing! Check back for more updates.';
+}
 
 /* Hide some shit */
 body:not(.res-nightmode) .nub, body:not(.res-nightmode) .titlebox .word, body:not(.res-nightmode) .bottom, body:not(.res-nightmode) .sidebox .spacer, body:not(.res-nightmode) .sidebox.create, body:not(.res-nightmode) .nsfw-stamp acronym, body:not(.res-nightmode) .titlebox .redditname a, #userbarToggle { display: none !important; }
@@ -833,7 +839,10 @@ a[href="http://www.reddit.com/r/purebattlefield/faq#PBScreensUserGuide"]::after 
  ***************************************************************************/
 
 /* Top message with events */
-body.subscriber.comments-page > .content::before, body.subscriber.listing-page > .content::before
-{ content: 'Current cash reserves (12/16): 1.7 months.  Goal: 3 months. Want to help? Click the yellow Donate button above!'; }
+body.subscriber.comments-page > .content::before, body.subscriber.listing-page > .content::before {
+    content: 'Current cash reserves (12/16): 1.7 months.  Goal: 3 months. Want to help? Click the yellow Donate button above!';
+}
 /* Header background image */
-body:not(.res-nightmode) #header { background-image: url(%%header11%%); } /* choose a header header1 through header11 */
+body:not(.res-nightmode) #header {
+    background-image: url(%%header11%%);
+} /* choose a header header1 through header11 */
