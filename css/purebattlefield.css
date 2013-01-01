@@ -757,7 +757,7 @@ body:not(.res-nightmode) .usertext-body p > code {
     -moz-text-shadow: 1px 1px #FBD97B;
     text-shadow: 1px 1px #FBD97B;
 }
-.side .md ol li:first-child a {
+.side .md > ol li:first-child a {
     border-left: 1px solid #c38602;
 
     background-color: #2C539E;
@@ -768,7 +768,7 @@ body:not(.res-nightmode) .usertext-body p > code {
     text-shadow: 1px 1px black;
     border: 1px solid #4C535D;
 }
-.side .md ol li:first-child a:hover {
+.side .md > ol li:first-child a:hover {
     text-decoration: underline;
     border: 1px solid #242124;
     background-color: #202C75;
