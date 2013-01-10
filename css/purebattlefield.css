@@ -311,6 +311,17 @@ body:not(.res-nightmode) .side .md h4 {
     margin-left: 6px;
 }
 
+/* Ribbons in sidebar */
+
+a[href$='#admin'] { content: url(%%admin%%); }
+a[href$='#webmaster'] { content: url(%%webmaster%%); }
+a[href$='#operations'] { content: url(%%operations%%); }
+a[href$='#developer'] { content: url(%%developer%%); }
+a[href$='#communications'] { content: url(%%communications%%); }
+a[href$='#community-project'] { content: url(%%community-project%%); }
+a[href$='#special'] { content: url(%%special%%); }
+a[href$='#lead'] { content: url(%%lead%%); }
+
 
 
 
@@ -610,17 +621,6 @@ body:not(.res-nightmode) .linkflairlabel + a.title:visited {
    ============= $Misc ================
    ==================================== */
 
-/* Ribbons in sidebar */
-
-a[href$='#admin'] { content: url(%%admin%%); }
-a[href$='#webmaster'] { content: url(%%webmaster%%); }
-a[href$='#operations'] { content: url(%%operations%%); }
-a[href$='#developer'] { content: url(%%developer%%); }
-a[href$='#communications'] { content: url(%%communications%%); }
-a[href$='#community-project'] { content: url(%%community-project%%); }
-a[href$='#special'] { content: url(%%special%%); }
-a[href$='#lead'] { content: url(%%lead%%); }
-
 /* Sticky announcement */
 body:not(.res-nightmode).comments-page > .content::before, body:not(.res-nightmode).listing-page > .content::before {
     display: block;
@@ -767,7 +767,8 @@ body:not(.res-nightmode) .usertext-body p > code {
     text-shadow: 1px 1px #FBD97B;
 }
 
-/*  New to Pure Battlefield button (for non-subscribers)
+/*
+    "New to Pure Battlefield?" button (for non-subscribers)
     Hides the button for subscribers
 */
 body.subscriber .side .md > ol > li:first-child a {
