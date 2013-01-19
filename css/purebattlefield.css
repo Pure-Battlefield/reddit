@@ -870,5 +870,5 @@ body.subscriber.comments-page > .content::before, body.subscriber.listing-page >
 }
 /* Header background image */
 body:not(.res-nightmode) #header {
-    background-image: url(%%header4%%);
+    background-image: url(%%header5%%);
 } /* choose a header header1 through header11 */
