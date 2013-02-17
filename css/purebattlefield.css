@@ -866,7 +866,7 @@ a[href="http://www.reddit.com/r/purebattlefield/faq#PBScreensUserGuide"]::after 
 
 /* Top message with events */
 body.subscriber.comments-page > .content::before, body.subscriber.listing-page > .content::before {
-    content: 'Current cash reserves (2/3): 3.66 months.  Goal: 6 months. Want to help? Click the yellow Donate button above!';
+    content: 'Current cash reserves (2/16): 6.44 months.  Goal: 6 months. Want to help? Click the yellow Donate button above!';
 }
 /* Header background image */
 body:not(.res-nightmode) #header {
