@@ -365,7 +365,7 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RIBBONS */
 
-.flair-admin::after, .flair-web-developer::after, .flair-operations::after, .flair-developer::after, .flair-communications::after, .flair-community-project::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-lead::after, .flair-medal-of-honor::after {
+.flair-admin::after, .flair-web-developer::after, .flair-operations::after, .flair-developer::after, .flair-communications::after, .flair-community-project::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-gold-star::after, .flair-red-star::after, .flair-blue-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-lead::after, .flair-medal-of-honor::after {
     line-height: 18px; font-size: 18px;
 }
 
@@ -378,6 +378,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-special::after { content: url(%%special%%); }
 .flair-bronze-star::after { content: url(%%bronze-star%%); }
 .flair-silver-star::after { content: url(%%silver-star%%); }
+.flair-gold-star::after { content: url(%%gold-star%%); }
+.flair-red-star::after { content: url(%%red-star%%); }
+.flair-blue-star::after { content: url(%%blue-star%%); }
 .flair-distinguished-service::after { content: url(%%distinguished-service%%); }
 .flair-commendation::after { content: url(%%commendation%%); }
 .flair-lead::after { content: url(%%lead%%); }
@@ -391,6 +394,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-special::after { content: url(%%admin%%) url(%%special%%); }
 .flair-admin.flair-bronze-star::after { content: url(%%admin%%) url(%%bronze-star%%); }
 .flair-admin.flair-silver-star::after { content: url(%%admin%%) url(%%silver-star%%); }
+.flair-admin.flair-gold-star::after { content: url(%%admin%%) url(%%gold-star%%); }
+.flair-admin.flair-red-star::after { content: url(%%admin%%) url(%%red-star%%); }
+.flair-admin.flair-blue-star::after { content: url(%%admin%%) url(%%blue-star%%); }
 .flair-admin.flair-distinguished-service::after { content: url(%%admin%%) url(%%distinguished-service%%); }
 .flair-admin.flair-commendation::after { content: url(%%admin%%) url(%%commendation%%); }
 .flair-admin.flair-lead::after { content: url(%%admin%%) url(%%lead%%); }
@@ -403,6 +409,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-web-developer.flair-special::after { content: url(%%admin%%) url(%%web-developer%%) url(%%special%%); }
 .flair-admin.flair-web-developer.flair-bronze-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%bronze-star%%); }
 .flair-admin.flair-web-developer.flair-silver-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%silver-star%%); }
+.flair-admin.flair-web-developer.flair-gold-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%gold-star%%); }
+.flair-admin.flair-web-developer.flair-red-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%red-star%%); }
+.flair-admin.flair-web-developer.flair-blue-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%blue-star%%); }
 .flair-admin.flair-web-developer.flair-distinguished-service::after { content: url(%%admin%%) url(%%web-developer%%) url(%%distinguished-service%%); }
 .flair-admin.flair-web-developer.flair-commendation::after { content: url(%%admin%%) url(%%web-developer%%) url(%%commendation%%); }
 .flair-admin.flair-web-developer.flair-lead::after { content: url(%%admin%%) url(%%web-developer%%) url(%%lead%%); }
@@ -413,6 +422,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-web-developer.flair-operations.flair-special::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%special%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-bronze-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%bronze-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-silver-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%silver-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-gold-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%gold-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-red-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%red-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-blue-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%blue-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-distinguished-service::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%distinguished-service%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-commendation::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%commendation%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-lead::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%lead%%); }
@@ -422,6 +434,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-special::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%special%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-silver-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%silver-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-gold-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%gold-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-red-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%red-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-blue-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%blue-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-distinguished-service::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%distinguished-service%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-commendation::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-lead::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%lead%%); }
@@ -430,6 +445,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-special::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%special%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-silver-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-gold-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-red-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-blue-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-commendation::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-lead::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%lead%%); }
@@ -437,6 +455,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-special::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%special%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-bronze-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%bronze-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-silver-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%silver-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-gold-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%gold-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%red-star%%); }
+.flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-blue-star::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%blue-star%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-distinguished-service::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%distinguished-service%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-commendation::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%commendation%%); }
 .flair-admin.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-lead::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%lead%%); }
@@ -449,6 +470,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-web-developer.flair-special::after { content: url(%%web-developer%%) url(%%special%%); }
 .flair-web-developer.flair-bronze-star::after { content: url(%%web-developer%%) url(%%bronze-star%%); }
 .flair-web-developer.flair-silver-star::after { content: url(%%web-developer%%) url(%%silver-star%%); }
+.flair-web-developer.flair-gold-star::after { content: url(%%web-developer%%) url(%%gold-star%%); }
+.flair-web-developer.flair-red-star::after { content: url(%%web-developer%%) url(%%red-star%%); }
+.flair-web-developer.flair-blue-star::after { content: url(%%web-developer%%) url(%%blue-star%%); }
 .flair-web-developer.flair-distinguished-service::after { content: url(%%web-developer%%) url(%%distinguished-service%%); }
 .flair-web-developer.flair-commendation::after { content: url(%%web-developer%%) url(%%commendation%%); }
 .flair-web-developer.flair-lead::after { content: url(%%web-developer%%) url(%%lead%%); }
@@ -459,6 +483,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-web-developer.flair-operations.flair-special::after { content: url(%%web-developer%%) url(%%operations%%) url(%%special%%); }
 .flair-web-developer.flair-operations.flair-bronze-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%bronze-star%%); }
 .flair-web-developer.flair-operations.flair-silver-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%silver-star%%); }
+.flair-web-developer.flair-operations.flair-gold-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%gold-star%%); }
+.flair-web-developer.flair-operations.flair-red-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%red-star%%); }
+.flair-web-developer.flair-operations.flair-blue-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%blue-star%%); }
 .flair-web-developer.flair-operations.flair-distinguished-service::after { content: url(%%web-developer%%) url(%%operations%%) url(%%distinguished-service%%); }
 .flair-web-developer.flair-operations.flair-commendation::after { content: url(%%web-developer%%) url(%%operations%%) url(%%commendation%%); }
 .flair-web-developer.flair-operations.flair-lead::after { content: url(%%web-developer%%) url(%%operations%%) url(%%lead%%); }
@@ -468,6 +495,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-web-developer.flair-operations.flair-developer.flair-special::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%special%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-silver-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%silver-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-gold-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%gold-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-red-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%red-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-blue-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%blue-star%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-distinguished-service::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%distinguished-service%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-commendation::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-lead::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%lead%%); }
@@ -476,6 +506,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-special::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%special%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-silver-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-gold-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-red-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-blue-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-commendation::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-lead::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%lead%%); }
@@ -483,6 +516,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-special::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%special%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-bronze-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%bronze-star%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-silver-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%silver-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-gold-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%gold-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-red-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%red-star%%); }
+.flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-blue-star::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%blue-star%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-distinguished-service::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%distinguished-service%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-commendation::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%commendation%%); }
 .flair-web-developer.flair-operations.flair-developer.flair-communications.flair-community-project.flair-lead::after { content: url(%%web-developer%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%lead%%); }
@@ -494,6 +530,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-operations.flair-special::after { content: url(%%operations%%) url(%%special%%); }
 .flair-operations.flair-bronze-star::after { content: url(%%operations%%) url(%%bronze-star%%); }
 .flair-operations.flair-silver-star::after { content: url(%%operations%%) url(%%silver-star%%); }
+.flair-operations.flair-gold-star::after { content: url(%%operations%%) url(%%gold-star%%); }
+.flair-operations.flair-red-star::after { content: url(%%operations%%) url(%%red-star%%); }
+.flair-operations.flair-blue-star::after { content: url(%%operations%%) url(%%blue-star%%); }
 .flair-operations.flair-distinguished-service::after { content: url(%%operations%%) url(%%distinguished-service%%); }
 .flair-operations.flair-commendation::after { content: url(%%operations%%) url(%%commendation%%); }
 .flair-operations.flair-lead::after { content: url(%%operations%%) url(%%lead%%); }
@@ -503,6 +542,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-operations.flair-developer.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%special%%); }
 .flair-operations.flair-developer.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
 .flair-operations.flair-developer.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%silver-star%%); }
+.flair-operations.flair-developer.flair-gold-star::after { content: url(%%operations%%) url(%%developer%%) url(%%gold-star%%); }
+.flair-operations.flair-developer.flair-red-star::after { content: url(%%operations%%) url(%%developer%%) url(%%red-star%%); }
+.flair-operations.flair-developer.flair-blue-star::after { content: url(%%operations%%) url(%%developer%%) url(%%blue-star%%); }
 .flair-operations.flair-developer.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%distinguished-service%%); }
 .flair-operations.flair-developer.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
 .flair-operations.flair-developer.flair-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%lead%%); }
@@ -511,6 +553,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-operations.flair-developer.flair-communications.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%special%%); }
 .flair-operations.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
 .flair-operations.flair-developer.flair-communications.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
+.flair-operations.flair-developer.flair-communications.flair-gold-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
+.flair-operations.flair-developer.flair-communications.flair-red-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
+.flair-operations.flair-developer.flair-communications.flair-blue-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
 .flair-operations.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
 .flair-operations.flair-developer.flair-communications.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
 .flair-operations.flair-developer.flair-communications.flair-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%lead%%); }
@@ -518,6 +563,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-operations.flair-developer.flair-communications.flair-community-project.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%special%%); }
 .flair-operations.flair-developer.flair-communications.flair-community-project.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%bronze-star%%); }
 .flair-operations.flair-developer.flair-communications.flair-community-project.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%silver-star%%); }
+.flair-operations.flair-developer.flair-communications.flair-community-project.flair-gold-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%gold-star%%); }
+.flair-operations.flair-developer.flair-communications.flair-community-project.flair-red-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%red-star%%); }
+.flair-operations.flair-developer.flair-communications.flair-community-project.flair-blue-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%blue-star%%); }
 .flair-operations.flair-developer.flair-communications.flair-community-project.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%distinguished-service%%); }
 .flair-operations.flair-developer.flair-communications.flair-community-project.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%commendation%%); }
 .flair-operations.flair-developer.flair-communications.flair-community-project.flair-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%lead%%); }
@@ -528,6 +576,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-developer.flair-special::after { content: url(%%developer%%) url(%%special%%); }
 .flair-developer.flair-bronze-star::after { content: url(%%developer%%) url(%%bronze-star%%); }
 .flair-developer.flair-silver-star::after { content: url(%%developer%%) url(%%silver-star%%); }
+.flair-developer.flair-gold-star::after { content: url(%%developer%%) url(%%gold-star%%); }
+.flair-developer.flair-red-star::after { content: url(%%developer%%) url(%%red-star%%); }
+.flair-developer.flair-blue-star::after { content: url(%%developer%%) url(%%blue-star%%); }
 .flair-developer.flair-distinguished-service::after { content: url(%%developer%%) url(%%distinguished-service%%); }
 .flair-developer.flair-commendation::after { content: url(%%developer%%) url(%%commendation%%); }
 .flair-developer.flair-lead::after { content: url(%%developer%%) url(%%lead%%); }
@@ -536,6 +587,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-developer.flair-communications.flair-special::after { content: url(%%developer%%) url(%%communications%%) url(%%special%%); }
 .flair-developer.flair-communications.flair-bronze-star::after { content: url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
 .flair-developer.flair-communications.flair-silver-star::after { content: url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
+.flair-developer.flair-communications.flair-gold-star::after { content: url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
+.flair-developer.flair-communications.flair-red-star::after { content: url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
+.flair-developer.flair-communications.flair-blue-star::after { content: url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
 .flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
 .flair-developer.flair-communications.flair-commendation::after { content: url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
 .flair-developer.flair-communications.flair-lead::after { content: url(%%developer%%) url(%%communications%%) url(%%lead%%); }
@@ -543,6 +597,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-developer.flair-communications.flair-community-project.flair-special::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%special%%); }
 .flair-developer.flair-communications.flair-community-project.flair-bronze-star::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%bronze-star%%); }
 .flair-developer.flair-communications.flair-community-project.flair-silver-star::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%silver-star%%); }
+.flair-developer.flair-communications.flair-community-project.flair-gold-star::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%gold-star%%); }
+.flair-developer.flair-communications.flair-community-project.flair-red-star::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%red-star%%); }
+.flair-developer.flair-communications.flair-community-project.flair-blue-star::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%blue-star%%); }
 .flair-developer.flair-communications.flair-community-project.flair-distinguished-service::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%distinguished-service%%); }
 .flair-developer.flair-communications.flair-community-project.flair-commendation::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%commendation%%); }
 .flair-developer.flair-communications.flair-community-project.flair-lead::after { content: url(%%developer%%) url(%%communications%%) url(%%community-project%%) url(%%lead%%); }
@@ -554,6 +611,9 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-community-project.flair-special::after { content: url(%%community-project%%) url(%%special%%); }
 .flair-community-project.flair-bronze-star::after { content: url(%%community-project%%) url(%%bronze-star%%); }
 .flair-community-project.flair-silver-star::after { content: url(%%community-project%%) url(%%silver-star%%); }
+.flair-community-project.flair-gold-star::after { content: url(%%community-project%%) url(%%gold-star%%); }
+.flair-community-project.flair-red-star::after { content: url(%%community-project%%) url(%%red-star%%); }
+.flair-community-project.flair-blue-star::after { content: url(%%community-project%%) url(%%blue-star%%); }
 .flair-community-project.flair-distinguished-service::after { content: url(%%community-project%%) url(%%distinguished-service%%); }
 .flair-community-project.flair-commendation::after { content: url(%%community-project%%) url(%%commendation%%); }
 .flair-community-project.flair-lead::after { content: url(%%community-project%%) url(%%lead%%); }
@@ -562,7 +622,11 @@ body:not(.res-nightmode) .footer.rounded {
 /* Custom ribbon flair */
 /* Generally needed if user flair is greater than two ribbons */
 
-.flair-developer.flair-lead.flair-admin::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%); } /* UGTA (Webs961) */
+.flair-developer.flair-lead.flair-admin.flair-blue-star::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%) url(%%blue-star%%); } /* UGTA (Webs961) */
+.flair-admin.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%community-project%%) url(%%red-star%%); } /* DotGaming (BaconBagel) */
+.flair-admin.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
+.flair-admin.flair-operations.flair-red-star::after { content: url(%%admin%%) url(%%operations%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
+.flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 
 
 /* RANKS */
@@ -586,7 +650,7 @@ body:not(.res-nightmode) .footer.rounded {
 /* Shows image displaying all flair */
 .linefield.flair-jump::after {
     display: block;
-    content: url(%%titles%%);
+    content: url(%%allawards%%);
 }
 
 /* Link Flair */
