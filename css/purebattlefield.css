@@ -626,7 +626,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%community-project%%) url(%%red-star%%); } /* DotGaming (BaconBagel) */
 .flair-admin.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
 .flair-admin.flair-operations.flair-red-star::after { content: url(%%admin%%) url(%%operations%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
-.flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
+.flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue. temp fix kozonak */
 
 
 /* RANKS */
