@@ -627,7 +627,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
 .flair-admin.flair-operations.flair-red-star::after { content: url(%%admin%%) url(%%operations%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
 .flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
-.flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star); } /* club_med */
+.flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
 
 
 
