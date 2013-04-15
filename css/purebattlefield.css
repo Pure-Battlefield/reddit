@@ -380,10 +380,7 @@ body:not(.res-nightmode) .footer.rounded {
   color: #777;
   font-size: 80%;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> Update header & add notice
 /* RIBBONS */
 
 .flair-admin::after, .flair-web-developer::after, .flair-operations::after, .flair-developer::after, .flair-communications::after, .flair-community-project::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-gold-star::after, .flair-red-star::after, .flair-blue-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-lead::after, .flair-medal-of-honor::after {
