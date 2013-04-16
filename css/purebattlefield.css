@@ -383,7 +383,7 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RIBBONS */
 
-.flair-admin::after, .flair-web-developer::after, .flair-operations::after, .flair-developer::after, .flair-communications::after, .flair-community-project::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-gold-star::after, .flair-red-star::after, .flair-blue-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-lead::after, .flair-medal-of-honor::after {
+.flair-admin::after, .flair-web-developer::after, .flair-operations::after, .flair-developer::after, .flair-communications::after, .flair-community-project::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-gold-star::after, .flair-red-star::after, .flair-blue-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-lead::after, .flair-medal-of-honor::after, .flair-accounting::after, .flair-seeder::after {
     line-height: 18px; font-size: 18px;
 }
 
@@ -403,6 +403,8 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-commendation::after { content: url(%%commendation%%); }
 .flair-lead::after { content: url(%%lead%%); }
 .flair-medal-of-honor::after { content: url(%%medal-of-honor%%); }
+.flair-accounting::after { content: url(%%accounting%%); }
+.flair-seeder::after { content: url(%%seeder%%); }
 
 .flair-admin.flair-web-developer::after { content: url(%%admin%%) url(%%web-developer%%); }
 .flair-admin.flair-operations::after { content: url(%%admin%%) url(%%operations%%); }
@@ -420,6 +422,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-lead::after { content: url(%%admin%%) url(%%lead%%); }
 .flair-admin.flair-medal-of-honor::after { content: url(%%admin%%) url(%%medal-of-honor%%); }
 .flair-admin.flair-developer.flair-lead::after { content: url(%%admin%%) url(%%developer%%) url(%%lead%%); }
+.flair-admin.flair-accounting::after { content: url(%%admin%%) url(%%accounting%%); }
 .flair-admin.flair-web-developer.flair-operations::after { content: url(%%admin%%) url(%%web-developer%%) url(%%operations%%); }
 .flair-admin.flair-web-developer.flair-developer::after { content: url(%%admin%%) url(%%web-developer%%) url(%%developer%%); }
 .flair-admin.flair-web-developer.flair-communications::after { content: url(%%admin%%) url(%%web-developer%%) url(%%communications%%); }
@@ -637,15 +640,27 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-community-project.flair-lead::after { content: url(%%community-project%%) url(%%lead%%); }
 .flair-community-project.flair-medal-of-honor::after { content: url(%%community-project%%) url(%%medal-of-honor%%); }
 
+
+/* on demand code. sorry for this. this code was inserted for various needs and because Kozonak didn't want to touch the wall of text above. Again, sorry. */
+/* seeder code */
+.flair-admin.flair-accounting.flair-seeder::after { content: url(%%admin%%) url(%%accounting%%) url(%%seeder%%); } /* cml1of4 - Canadian_GTR */
+.flair-operations.flair-seeder.flair-blue-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%blue-star%%); } /* gringopar */
+.flair-admin.flair-seeder.flair-blue-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%blue-star%%); } /* ratdart */
+
+
+
+.flair-accounting.flair-red-star::after {content: url(%%accounting%%) url(%%red-star%%);}
+
 /* Custom ribbon flair */
 /* Generally needed if user flair is greater than two ribbons */
 
 .flair-developer.flair-lead.flair-admin.flair-blue-star::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%) url(%%blue-star%%); } /* UGTA (Webs961) */
 .flair-admin.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%community-project%%) url(%%red-star%%); } /* DotGaming (BaconBagel) */
-.flair-admin.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
-.flair-admin.flair-operations.flair-red-star::after { content: url(%%admin%%) url(%%operations%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
+.flair-admin.flair-lead.flair-accounting.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%accounting%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
+.flair-admin.flair-operations.flair-lead.flair-accounting.flair-red-star::after { content: url(%%admin%%) url(%%operations%%) url(%%lead%%) url(%%accounting%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
 .flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
+
 
 
 
@@ -674,7 +689,7 @@ body:not(.res-nightmode) .footer.rounded {
 /* Shows image displaying all flair */
 .linefield.flair-jump::after {
     display: block;
-    content: url(%%allawards%%);
+    content: url(%%flairhelp%%);
 }
 
 /* Link Flair */
