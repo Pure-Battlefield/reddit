@@ -1,3 +1,18 @@
+/*
+
+PURE Battlefield - Subreddit Stylesheet
+IMPORTANT NOTICE ON UPDATING
+Before updating this stylesheet, grab the latest version of it on the subreddit.
+We have many code changes every week, and not all go through source control,
+so it is important to grab the changes and add them to this file in Git so they
+won't be overwritten.
+
+*/
+
+
+
+
+
 1. [New to Pure Battlefield?](http://about.purebattlefield.org)
 2. [Game Servers](##)
   1. [Conquest](http://goo.gl/kclxy)
