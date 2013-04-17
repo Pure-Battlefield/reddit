@@ -645,9 +645,7 @@ body:not(.res-nightmode) .footer.rounded {
 /* seeder code */
 .flair-admin.flair-accounting.flair-seeder::after { content: url(%%admin%%) url(%%accounting%%) url(%%seeder%%); } /* cml1of4 - Canadian_GTR */
 .flair-operations.flair-seeder.flair-blue-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%blue-star%%); } /* gringopar */
-.flair-admin.flair-seeder.flair-blue-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%blue-star%%); } /* ratdart */
-
-
+.flair-admin.flair-seeder.flair-blue-star::after { content: url(%%admin%%) url(%%seeder%%) url(%%blue-star%%); } /* ratdart */
 
 .flair-accounting.flair-red-star::after {content: url(%%accounting%%) url(%%red-star%%);}
 
@@ -656,14 +654,10 @@ body:not(.res-nightmode) .footer.rounded {
 
 .flair-developer.flair-lead.flair-admin.flair-blue-star::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%) url(%%blue-star%%); } /* UGTA (Webs961) */
 .flair-admin.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%community-project%%) url(%%red-star%%); } /* DotGaming (BaconBagel) */
-.flair-admin.flair-lead.flair-accounting.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%accounting%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
-.flair-admin.flair-operations.flair-lead.flair-accounting.flair-red-star::after { content: url(%%admin%%) url(%%operations%%) url(%%lead%%) url(%%accounting%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
+.flair-admin.flair-lead.flair-seeder.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%seeder%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
+.flair-admin.flair-accounting.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%lead%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
 .flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
-
-
-
-
 
 .flair-operations.flair-admin.flair-gold-star.flair-silver-star::after { content: url(%%operations%%) url(%%admin%%) url(%%gold-star%%) url(%%silver-star%%); } /* Kozonak's Test*/
 
