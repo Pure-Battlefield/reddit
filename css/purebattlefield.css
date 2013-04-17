@@ -333,7 +333,7 @@ a[href$='#communications'] { content: url(%%communications%%); }
 a[href$='#community-project'] { content: url(%%community-project%%); }
 a[href$='#special'] { content: url(%%special%%); }
 a[href$='#accounting'] { content: url(%%accounting%%); }
-a[href$='#seeders'] { content: url(%%seeders%%); }
+a[href$='#seeder'] { content: url(%%seeder%%); }
 a[href$='#lead'] { content: url(%%lead%%); }
 
 
