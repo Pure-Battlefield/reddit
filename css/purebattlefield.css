@@ -332,6 +332,8 @@ a[href$='#developer'] { content: url(%%developer%%); }
 a[href$='#communications'] { content: url(%%communications%%); }
 a[href$='#community-project'] { content: url(%%community-project%%); }
 a[href$='#special'] { content: url(%%special%%); }
+a[href$='#accounting'] { content: url(%%accounting%%); }
+a[href$='#seeders'] { content: url(%%seeders%%); }
 a[href$='#lead'] { content: url(%%lead%%); }
 
 
