@@ -325,16 +325,16 @@ body:not(.res-nightmode) .side .md h4 {
 
 /* Ribbons in sidebar */
 
-a[href$='#admin'] { content: url(%%admin%%); }
-a[href$='#web-developer'] { content: url(%%web-developer%%); }
-a[href$='#operations'] { content: url(%%operations%%); }
-a[href$='#developer'] { content: url(%%developer%%); }
-a[href$='#communications'] { content: url(%%communications%%); }
-a[href$='#community-project'] { content: url(%%community-project%%); }
-a[href$='#special'] { content: url(%%special%%); }
-a[href$='#accounting'] { content: url(%%accounting%%); }
-a[href$='#seeder'] { content: url(%%seeder%%); }
-a[href$='#lead'] { content: url(%%lead%%); }
+a[href$='#admin']:after { content: url(%%admin%%); }
+a[href$='#web-developer']:after { content: url(%%web-developer%%); }
+a[href$='#operations']:after { content: url(%%operations%%); }
+a[href$='#developer']:after { content: url(%%developer%%); }
+a[href$='#communications']:after { content: url(%%communications%%); }
+a[href$='#community-project']:after { content: url(%%community-project%%); }
+a[href$='#special']:after { content: url(%%special%%); }
+a[href$='#accounting']:after { content: url(%%accounting%%); }
+a[href$='#seeder']:after { content: url(%%seeder%%); }
+a[href$='#lead']:after { content: url(%%lead%%); }
 
 
 
