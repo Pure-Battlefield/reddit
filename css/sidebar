@@ -1,3 +1,33 @@
+********************************************************************************
+********************************************************************************
+ _   _  ____ _______ _____ _____ ______ 
+| \ | |/ __ \__   __|_   _/ ____|  ____|
+|  \| | |  | | | |    | || |    | |__   
+| . ` | |  | | | |    | || |    |  __|  
+| |\  | |__| | | |   _| || |____| |____ 
+|_| \_|\____/  |_|  |_____\_____|______|
+
+
+***********Do not copy the following to the Sub-Reddit settings*****************
+
+PURE Battlefield - Subreddit Sidebar Content
+IMPORTANT NOTICE ON UPDATING
+Before updating this content, grab the latest version of it on the subreddit.
+We have many code changes every week, and not all go through source control,
+so it is important to grab the changes and add them to this file in Git so they
+won't be overwritten.
+
+**********Copy everything below to the Sub-Reddit settings Sidebar box**********
+********************************************************************************
+
+
+
+
+
+
+
+
+
 1. [New to Pure Battlefield?](http://about.purebattlefield.org)
 2. [Game Servers](##)
   1. [Conquest](http://goo.gl/kclxy)
@@ -31,9 +61,12 @@ Check out our **[Teamspeak Guide](http://teamspeakguide.purebattlefield.org/)** 
 
 ###Pure Battlefield volunteers
 
-Community Lead: 
-&shy;
-**Adama42** - [jhogan](/u/jhogan) [](#lead) 
+---
+
+>**Community Lead**:
+>
+> **Adama42** - [jhogan](/u/jhogan) [](#lead)
+
 &shy;
 
 ---
