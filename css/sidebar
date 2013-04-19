@@ -1,18 +1,3 @@
-***********Do not copy the following to the Sub-Reddit settings*****************
-
-PURE Battlefield - Subreddit Sidebar Content
-IMPORTANT NOTICE ON UPDATING
-Before updating this content, grab the latest version of it on the subreddit.
-We have many code changes every week, and not all go through source control,
-so it is important to grab the changes and add them to this file in Git so they
-won't be overwritten.
-
-**********Copy everything below to the Sub-Reddit settings Sidebar box**********
-
-
-
-
-
 1. [New to Pure Battlefield?](http://about.purebattlefield.org)
 2. [Game Servers](##)
   1. [Conquest](http://goo.gl/kclxy)
@@ -42,115 +27,122 @@ won't be overwritten.
 ####Teamspeak address:
 `teamspeak.purebattlefield.org`
 
-
-
 Check out our **[Teamspeak Guide](http://teamspeakguide.purebattlefield.org/)** for information on setting up Teamspeak.
 
----
 ###Pure Battlefield volunteers
-&shy; | &shy;
---: | :--
-BattleLog ID - | Reddit ID
-&shy; | &shy;
-####Community Lead:
 
-&shy; | &shy;
---: | :--
-Adama42 -| [jhogan](/u/jhogan) [](#lead) 
-&shy; | &shy;
+Community Lead: 
+&shy;
+**Adama42** - [jhogan](/u/jhogan) [](#lead) 
+&shy;
 
-####Operations: [](#operations)
+---
 
-&shy; | &shy;
---: | :--
-Gringopar -| [gringopar](/u/gringopar)  
-Kozonak -| [Kozonak](/u/Kozonak)  
-LosLocosTacos -|[UnoTaco](/u/UnoTaco)
-Triplet-Threat -| [lebeauc](/u/lebeauc)  
-&shy; | &shy;
+>#
+* Server Administrators [](#admin)
+* **Administrator Lead** [](#lead)
+* Comby_McBeardz - [CombyMcBeardz](/u/CombyMcBeardz) 
+* &shy;
+* &shy;
+* **Administration Team**
+* *BattleLog ID - Reddit ID*
+* 1CaptainKirk - [captainkirk12](/u/captainkirk12)
+* BaconBagel - [dotgaming](/u/dotgaming)
+* Canadian_GTR - [cml1of4](/u/cml1of4)
+* destroyermaker - [destroyermaker](/u/destroyermaker)
+* Jester345 - [Nofear1056](/u/Nofear1056)
+* Kozonak - [Kozonak](/u/Kozonak)
+* MaddFerritt - [MaddFerritt](/u/MaddFerritt)
+* Primetime4549 - [ItsPrimetime](/u/ItsPrimetime)  
+* Ratdart88 - [Ratdart](/u/Ratdart)  
+* T4_OPS - [T4_OPS](/u/T4_OPS)
+* Webs961 - [UGTA](/u/UGTA)  
 
-####Accounting: [](#accounting)
+---
+>#
+* Operations [](#operations)
+* **Operations Lead** [](#lead)
+* &shy;
+* &shy;
+* &shy;
+* **Operations Team**
+* *BattleLog ID - Reddit ID*
+* Gringopar - [gringopar](/u/gringopar)
+* Kozonak - [Kozonak](/u/kozonak)
+* LosLocosTacos - [UnoTaco](/u/UnoTaco)
+* Triplet-Threat - [lebeauc](/u/lebeauc) 
 
-&shy; | &shy;
---: | :--
-Jester345 -| [nofear1056](/u/nofear1056) [](#lead)
-Canadian_GTR -| [cml1of4](/u/cml1of4)
-lax4life001 -|[lax4life001](/u/lax4life001)
-T4_OPS -| [T4_OPS](/u/T4_OPS)
-&shy; | &shy;
+---
+>#
+* Accounting [](#accounting)
+* **Accounting Lead** [](#lead)
+* Jester345 - [nofear1056](/u/nofear1056)
+* &shy;
+* &shy;
+* **Accounting Team**
+* *BattleLog ID - Reddit ID*
+* Canadian_GTR - [cml1of4](/u/cml1of4)
+* lax4life001 -[lax4life001](/u/lax4life001)
+* T4_OPS - [T4_OPS](/u/T4_OPS)
 
-####Software Developers: [](#developer)
 
-&shy; | &shy;
---: | :--
-Webs961 -| [UGTA](/u/UGTA) [](#lead)   
-behatilol -| [behatilol](/u/behatilol)
-DarkLord7854 -| [DarkLord7854](/u/DarkLord7854) 
-Llamautomatic -| [maretard](/u/maretard)
-mamidon -| [lanissum](/u/lanissum)
-&shy; | &shy;
+---
+>#
+* Software Developers [](#developer)
+* **Developer Lead** [](#lead)
+* Webs961 - [UGTA](/u/UGTA)   
+* &shy;
+* &shy;
+* **Developer Team**
+* *BattleLog ID - Reddit ID*
+* behatilol - [behatilol](/u/behatilol)
+* DarkLord7854 - [DarkLord7854](/u/DarkLord7854) 
+* Llamautomatic - [maretard](/u/maretard)
+* mamidon - [lanissum](/u/lanissum)
 
-####Web Developers: [](#web-developer)
+---
 
-&shy; | &shy;
---: | :--
-c0smic6 -| [c0smic](/u/c0smic)
-&shy; | &shy;
+>#
+* Web Developers [](#web-developer)
+* *BattleLog ID - Reddit ID*
+* c0smic6 - [c0smic](/u/c0smic)
 
-####Special Projects: [](#special)
+---
 
-&shy; | &shy;
---: | :--
-fuorigin -| [club_med](/u/club_med)  
-&shy; | &shy;
+>#
+* Special Projects [](#special)
+* *BattleLog ID - Reddit ID*
+* fuorigin - [club_med](/u/club_med)  
 
-####Server Administrators: [](#admin)
+---
 
-&shy; | &shy;
---: | :--
-Comby_McBeardz |- [CombyMcBeardz](/u/CombyMcBeardz) [](#lead)
-1CaptainKirk |- [captainkirk12](/u/captainkirk12)
-BaconBagel |- [dotgaming](/u/dotgaming)
-Canadian_GTR |- [cml1of4](/u/cml1of4)
-destroyermaker |- [destroyermaker](/u/destroyermaker)
-Jester345 |- [Nofear1056](/u/Nofear1056)
-Kozonak |- [Kozonak](/u/Kozonak)
-MaddFerritt |- [MaddFerritt](/u/MaddFerritt)
-Primetime4549 |- [ItsPrimetime](/u/ItsPrimetime)  
-Ratdart88 |- [Ratdart](/u/Ratdart)  
-T4_OPS |- [T4_OPS](/u/T4_OPS)
-Webs961 |- [UGTA](/u/UGTA)  
-
-####Pure Battlefield Seeding Team: [](#seeder)
-
-&shy; | &shy;
---: | :--
-[Seeding Team List](https://docs.google.com/document/d/1Qo2SDbcxGc9VweXbOCVfQ7aksKIEA0eTkI6V_ZnL1_c/edit) | 
+>#
+* Seeding Team [](#seeder)
+* *BattleLog ID - Reddit ID*
+* Canadian_GTR - [cml1of4](/u/cml1of4)
+* Comby_McBeardz - [CombyMcBeardz](/u/CombyMcBeardz)  
+* daveden123 - [cml1of4](/u/cml1of4)
+* destroyermaker - [daveden123](/u/daveden123)
+* DrawnM - [JironM](/u/JironM)
+* Gringopar  - [Gringopar](/u/gringopar)
+* Ratdart88 - [Ratdart](/u/Ratdart)
+* TehNut - [TehNut](/u/TehNut)
+* txapollo243 - [txapollo342](/u/txapollo342)
+* Xythar - [Xythar12](/u/Xythar12)
 
 ---
 ### Unofficial community projects
 
-&shy; | &shy;
---: | :--
-BattleLog ID - | Reddit ID
-&shy; | &shy;
+>#
+* Events [](#community-project)
+* *BattleLog ID - Reddit ID*
+* BaconBagel - [dotgaming](/u/dotgaming)
+* GmFc_EX1LEDFPS - [EX1LEDFPS](/u/EX1LEDFPS)
+* shifty1981 - [shifty21](/u/shifty21)  
+* Smileynulk - [Smileynulk](/u/smileynulk)
 
-####Events: [](#community-project) 
 
-&shy; | &shy;
---: | :--
-BaconBagel -| [dotgaming](/u/dotgaming)
-GmFc_EX1LEDFPS -| [EX1LEDFPS](/u/EX1LEDFPS)
-shifty1981 -| [shifty21](/u/shifty21)  
-Smileynulk -| [Smileynulk](/u/smileynulk)
-&shy; | &shy;
-
----
 ###Contact our team
-
-**General suggestions or feedback:**
-
-####[Write a public post](/r/purebattlefield/submit?title=%5BFeedback%5D;text=%5BSuggestion-Here%5D)
 
 **Rule violations or suspected cheaters:**
 
