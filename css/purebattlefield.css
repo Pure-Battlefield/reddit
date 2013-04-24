@@ -1,5 +1,7 @@
 /* 
 
+    Last update: 24.04.2013 - added new css for 4+ on Kozonak
+
     PURE Battlefield - Subreddit Stylesheet 
     
     IMPORTANT NOTICE ON UPDATING 
@@ -732,11 +734,8 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-admin.flair-accounting.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%lead%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
 .flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
-
-
-
-
-.flair-operations.flair-admin.flair-gold-star.flair-silver-star::after { content: url(%%operations%%) url(%%admin%%) url(%%gold-star%%) url(%%silver-star%%); } /* Kozonak's Test*/
+.flair-operations.flair-admin.flair-seeder.flair-web-developer.flair-red-star::after { content: url(%%operations%%) url(%%admin%%) url(%%seeder%%) url(%%web-developer%%) url(%%red-star%%); } /* Kozonak (Kozonak)*/
+.flair-admin.flair-operations.flair-lead::after { content: url(%%admin%%) url(%%operations%%) url(%%lead%%); } /* ItsPrimetime (Primetime4549) */
 
 
 /* RANKS */
