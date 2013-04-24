@@ -1,7 +1,5 @@
 /* 
 
-    Last update: 24.04.2013 - added new css for 4+ on Kozonak
-
     PURE Battlefield - Subreddit Stylesheet 
     
     IMPORTANT NOTICE ON UPDATING 
@@ -321,6 +319,85 @@ body:not(.res-nightmode) .side .md h4 {
     margin-left: 6px;
     text-align: center;
 }
+
+/* Link info styling*/
+/* Code taken from ==Boxed reddit CSS Theme v1.1.2 - (http://www.reddit.com/r/boxed/)== */
+
+.linkinfo {
+    background-color: white;
+    color: #363636;
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0px 15px 0px;
+    border: 1px solid #C1BFBF;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px !important;
+}
+
+.linkinfo .downvotes .number, .linkinfo .upvotes .number, .linkinfo .score .number {
+    font-size: 20px !important;
+    display: block;
+    font-weight: normal !important;
+}
+
+.linkinfo .score .word {
+    display: none;
+}
+
+.linkinfo .score {
+    font-size: 11px;
+    display: block;
+    min-width: 80px;
+    margin-left: 30px !important;
+}
+
+.linkinfo .downvotes .word, .linkinfo .upvotes .word {
+    font-size: 11px;
+}
+
+.linkinfo .upvotes, .linkinfo .downvotes, .linkinfo .score {
+    float: left;
+    padding: 5px 10px 5px 0;
+    margin: 8px 10px 10px 0;
+    text-align: center;
+}
+
+.linkinfo .score, .linkinfo .upvotes {
+    border-right: 1px solid #C1BFBF;
+}
+
+.linkinfo .shortlink {
+    clear: both !important;
+    font-size: 10px;
+    margin: 0px 20px 0px 20px;
+    border: 1px solid #E7E6E6;
+    text-align: center;
+}
+
+.linkinfo .shortlink input {
+    background: transparent;
+    border: 0px;
+    padding-left: 8px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.linkinfo .date {
+    padding: 8px;
+    margin-top: -10px;
+    margin-bottom: 7px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #4169e1;
+    font-size: 12px;
+/*  text-transform:uppercase; */
+}
+
+
 
 /* Ribbons in sidebar */
 
@@ -1057,3 +1134,4 @@ body:not(.res-nightmode) #header {
 
 /* remove the rank (i.e. post number( */
 .rank { display: none; }
+
