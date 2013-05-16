@@ -1,24 +1,23 @@
-/* 
+/*
 
-    PURE Battlefield - Subreddit Stylesheet 
-    
-    IMPORTANT NOTICE ON UPDATING 
-    Before updating this stylesheet, grab the latest version of it on the subreddit. 
-    We have many flair & medal changes every week, and not all go through source control, 
-    so it is important to grab the changes and add them to this file in Git so they 
-    won't be overwritten. 
+PURE Battlefield - Subreddit Stylesheet
+IMPORTANT NOTICE ON UPDATING
+Before updating this stylesheet, grab the latest version of it on the subreddit.
+We have many flair & medal changes every week, and not all go through source control,
+so it is important to grab the changes and add them to this file in Git so they
+won't be overwritten.
 
 */
 
 /* --- Table of Contents --- */
 
 /*
-    1. $Header
-    2. $Content
-    3. $Sidebar
-    4. $Footer
-    5. $Flair
-    6. $Misc
+1. $Header
+2. $Content
+3. $Sidebar
+4. $Footer
+5. $Flair
+6. $Misc
 */
 
 body {
@@ -29,8 +28,8 @@ body {
 body:not(.logged-in) .infobar { display: none; }
 
 /* ====================================
-   ============= $Header ==============
-   ==================================== */
+============= $Header ==============
+==================================== */
 
 body:not(.res-nightmode) #header {
     background: #222 url(%%header9%%) bottom left no-repeat;
@@ -136,8 +135,8 @@ body:not(.res-nightmode) #header .tabmenu .selected {
 
 
 /* ====================================
-   ============= $Content =============
-   ==================================== */
+============= $Content =============
+==================================== */
 
 body > .content {
     margin: 8px;
@@ -233,8 +232,8 @@ body:not(.res-nightmode) .formtabs-content {
 
 
 /* ====================================
-   ============= $Sidebar =============
-   ==================================== */
+============= $Sidebar =============
+==================================== */
 
 body:not(.res-nightmode) .side {
     padding: 50px 4px 0px 8px;
@@ -394,7 +393,7 @@ body:not(.res-nightmode) .side .md h4 {
     font-weight: bold;
     background-color: #4169e1;
     font-size: 12px;
-/*  text-transform:uppercase; */
+/* text-transform:uppercase; */
 }
 
 
@@ -450,8 +449,8 @@ a[href$='#seeder']:after { content: url(%%seeder%%); }
     }
 /*makes whole list item selectable*/
 /*.titlebox blockquote li a {
-/*    display: block
-/*    }
+/* display: block
+/* }
 /*shows menu on hover*/
 .titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
     display: block
@@ -489,8 +488,8 @@ a[href$='#seeder']:after { content: url(%%seeder%%); }
 
 
 /* ====================================
-   ============= $Footer ==============
-   ==================================== */
+============= $Footer ==============
+==================================== */
 
 body:not(.res-nightmode) .footer-parent {
     background: url(%%footerbf%%) bottom center no-repeat;
@@ -510,8 +509,8 @@ body:not(.res-nightmode) .footer.rounded {
 
 
 /* ====================================
-   ============= $Flair ===============
-   ==================================== */
+============= $Flair ===============
+==================================== */
 
 /* User Flair */
 
@@ -556,6 +555,7 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-of-honor::after { content: url(%%medal-of-honor%%); }
 .flair-accounting::after { content: url(%%accounting%%); }
 .flair-seeder::after { content: url(%%seeder%%); }
+.flair-bucket::after { content: url(%%bucket%%); }
 
 .flair-admin.flair-web-developer::after { content: url(%%admin%%) url(%%web-developer%%); }
 .flair-admin.flair-operations::after { content: url(%%admin%%) url(%%operations%%); }
@@ -807,8 +807,8 @@ body:not(.res-nightmode) .footer.rounded {
 
 .flair-developer.flair-lead.flair-admin.flair-blue-star::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%) url(%%blue-star%%); } /* UGTA (Webs961) */
 .flair-admin.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%community-project%%) url(%%red-star%%); } /* DotGaming (BaconBagel) */
-.flair-admin.flair-lead.flair-seeder.flair-red-star::after { content: url(%%admin%%) url(%%lead%%) url(%%seeder%%) url(%%red-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
-.flair-admin.flair-accounting.flair-lead.flair-red-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%lead%%) url(%%red-star%%); } /* nofear1056 (Jester345) */
+.flair-admin.flair-lead.flair-seeder.flair-blue-star::after { content: url(%%admin%%) url(%%lead%%) url(%%seeder%%) url(%%blue-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
+.flair-admin.flair-accounting.flair-lead.flair-blue-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%lead%%) url(%%blue-star%%); } /* nofear1056 (Jester345) */
 .flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
 .flair-operations.flair-admin.flair-seeder.flair-web-developer.flair-red-star::after { content: url(%%operations%%) url(%%admin%%) url(%%seeder%%) url(%%web-developer%%) url(%%red-star%%); } /* Kozonak (Kozonak)*/
@@ -817,16 +817,17 @@ body:not(.res-nightmode) .footer.rounded {
 
 /* RANKS */
 
-.flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general {
+.flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general, .flair-msergeant {
     background: url(%%ranks%%) 3px 1px no-repeat;
 }
 
-.flair-sergeant   { background-position: 3px  -39px; }
-.flair-lieutenant { background-position: 3px  -79px; }
-.flair-captain    { background-position: 3px -117px; }
-.flair-major      { background-position: 3px -157px; }
+.flair-sergeant { background-position: 3px -39px; }
+.flair-lieutenant { background-position: 3px -79px; }
+.flair-captain { background-position: 3px -117px; }
+.flair-major { background-position: 3px -157px; }
 .flair-lt-colonel { background-position: 3px -196px; }
-.flair-general    { background-position: 3px -239px; }
+.flair-general { background-position: 3px -239px; }
+.flair-msergeant { background-position: 3px -267px; }
 
 /* DICE and EA employees */
 
@@ -850,11 +851,11 @@ body:not(.res-nightmode) .footer.rounded {
 .linkflair-event .linkflairlabel {
     border: 0;
     background-color: transparent;
-    color: #13A000;
+    color: green;
     font-size: inherit;
     text-shadow: 1px 1px 3px #ccc;
 }
-.linkflair-special .linkflairlabel {
+.linkflair-unofficial .linkflairlabel {
     border: 0;
     background-color: transparent;
     color: #00AAFF;
@@ -875,8 +876,8 @@ body:not(.res-nightmode) .linkflairlabel + a.title:visited {
 
 
 /* ====================================
-   ============= $Misc ================
-   ==================================== */
+============= $Misc ================
+==================================== */
 
 /* Sticky announcement */
 body:not(.res-nightmode).comments-page > .content::before, body:not(.res-nightmode).listing-page > .content::before {
@@ -1025,8 +1026,8 @@ body:not(.res-nightmode) .usertext-body p > code {
 }
 
 /*
-    "New to Pure Battlefield?" button (for non-subscribers)
-    Hides the button for subscribers
+"New to Pure Battlefield?" button (for non-subscribers)
+Hides the button for subscribers
 */
 body.subscriber .side .md > ol > li:first-child a {
     display: none;
@@ -1117,9 +1118,9 @@ a[href="http://www.reddit.com/r/purebattlefield/faq#PBScreensUserGuide"]::after 
 
 /***************************************************************************
 
- **************************** EDIT STUFF HERE! *****************************
+**************************** EDIT STUFF HERE! *****************************
 
- ***************************************************************************/
+***************************************************************************/
 
 /* Top message with events */
 body.subscriber.comments-page > .content::before, body.subscriber.listing-page > .content::before {
@@ -1132,6 +1133,40 @@ body:not(.res-nightmode) #header {
 
 
 
+/* Removing unnecessary stuff *.
 /* remove the rank (i.e. post number( */
 .rank { display: none; }
 
+/* Removal of other sub choices in Submit a link*/
+.submit-page #reddit-field { display: none; }
+
+
+
+/* Hover over flair to show team names */
+
+/* Canadian_GTR */
+.flair-admin.flair-accounting.flair-seeder:hover:before { 
+    position: absolute;
+    display: block;
+    list-style: none;
+    z-index: 1000;
+    opacity:0.9;
+width: 300px;
+
+    padding: 5px;
+    border: 1px solid #333;
+    background-color: white;
+    content:  url(%%admin%%)" Admin  "
+
+              url(%%accounting%%)"  Accounting " 
+
+              url(%%seeder%%)"  Seeder";
+
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+ }
