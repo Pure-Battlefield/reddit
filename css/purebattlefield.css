@@ -805,16 +805,19 @@ body:not(.res-nightmode) .footer.rounded {
 /* Custom ribbon flair */
 /* Generally needed if user flair is greater than two ribbons */
 
-.flair-developer.flair-lead.flair-admin.flair-blue-star::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%) url(%%blue-star%%); } /* UGTA (Webs961) */
+
+.flair-developer.flair-lead.flair-admin.flair-operations.flair-bronze-star::after { content: url(%%developer%%) url(%%lead%%) url(%%admin%%) url(%%operations%%) url(%%bronze-star%%); } /* UGTA (Webs961) */
 .flair-admin.flair-community-project.flair-red-star::after { content: url(%%admin%%) url(%%community-project%%) url(%%red-star%%); } /* DotGaming (BaconBagel) */
 .flair-admin.flair-lead.flair-seeder.flair-blue-star::after { content: url(%%admin%%) url(%%lead%%) url(%%seeder%%) url(%%blue-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
 .flair-admin.flair-accounting.flair-lead.flair-blue-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%lead%%) url(%%blue-star%%); } /* nofear1056 (Jester345) */
 .flair-lead.flair-gold-star::after { content: url(%%lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
 .flair-operations.flair-admin.flair-seeder.flair-web-developer.flair-red-star::after { content: url(%%operations%%) url(%%admin%%) url(%%seeder%%) url(%%web-developer%%) url(%%red-star%%); } /* Kozonak (Kozonak)*/
-.flair-admin.flair-operations.flair-lead::after { content: url(%%admin%%) url(%%operations%%) url(%%lead%%); } /* ItsPrimetime (Primetime4549) */
-
-
+.flair-admin.flair-seeder::after { content: url(%%admin%%) url(%%seeder%%); } /* Xythar12 (Xythar) */ 
+.flair-admin.flair-lead.flair-seeder.flair-accounting.flair-blue-star::after { content: url(%%admin%%) url(%%lead%%) url(%%seeder%%) url(%%accounting%%) url(%%blue-star%%); } /* Ratdart (Ratdart88) */
+.flair-developer.flair-seeder::after { content: url(%%developer%%) url(%%seeder%%); } /* txapollo243 (txapollo342) */
+.flair-admin.flair-seeder.flair-red-star::after { content: url(%%admin%%) url(%%seeder%%) url(%%red-star%%); } /* cml1of4 (Canadian_GTR) */
+.flair-operations.flair-admin.flair-red-star::after { content: url(%%operations%%) url(%%admin%%) url(%%red-star%%); } /* ItsPrimetime (Primetime4549) */
 /* RANKS */
 
 .flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general, .flair-msergeant {
@@ -1041,7 +1044,7 @@ body:not(.subscriber) .side .md > ol > li:first-child a {
     border: 1px solid #4C535D;
     position: absolute;
     margin-top: 45px;
-    left: 471px;
+    left: 419px;
     width: 297px;
     text-align: center;
     padding: 5px 0;
