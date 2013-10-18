@@ -1062,7 +1062,7 @@ body:not(.subscriber) .side .md > ol > li:first-child a {
     height: 29px;
 }
 body:not(.subscriber).comments-page .side .md > ol > li:first-child a {
-    left: 471px;
+    left: 419px;
 }
 body:not(.subscriber) .side .md > ol > li:first-child a:hover {
     text-decoration: underline;
