@@ -812,22 +812,23 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-accounting.flair-seeder.flair-team-lead.flair-bronze-star::after { content: url(%%accounting%%) url(%%seeder%%) url(%%team-lead%%) url(%%bronze-star%%); } /* nofear1056 (Jester345) */
 .flair-team-lead.flair-gold-star::after { content: url(%%team-lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
-.flair-operations.flair-admin.flair-project-lead.flair-red-star::after { content: url(%%operations%%) url(%%admin%%) url(%%project-lead%%) url(%%red-star%%); } /* Kozonak (Kozonak)*/
 .flair-admin.flair-seeder::after { content: url(%%admin%%) url(%%seeder%%); } /* Xythar12 (Xythar) */ 
 .flair-admin.flair-team-lead.flair-accounting.flair-silver-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%accounting%%) url(%%silver-star%%); } /* Ratdart (Ratdart88) */
 .flair-developer.flair-seeder::after { content: url(%%developer%%) url(%%seeder%%); } /* txapollo243 (txapollo342) */
 .flair-admin.flair-special.flair-seeder::after { content: url(%%admin%%) url(%%special%%) url(%%seeder%%); } /* RiseOtalic (FulIMetal) */
-.flair-events.flair-operations.flair-red-star::after { content: url(%%events%%) url(%%operations%%) url(%%red-star%%); } /* Smileynulk (Smileynulk) */
+.flair-events.flair-operations.flair-blue-star::after { content: url(%%events%%) url(%%operations%%) url(%%blue-star%%); } /* Smileynulk (Smileynulk) */
 .flair-admin.flair-seeder.flair-red-star::after { content: url(%%admin%%) url(%%seeder%%) url(%%red-star%%); } /* FullMetaI (FulIMetal) */
 .flair-accounting.flair-blue-star::after { content: url(%%accounting%%) url(%%blue-star%%); } /* lax4life001 (lax4life001) */
-.flair-admin.flair-team-lead.flair-communications.flair-red-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%communications%%) url(%%red-star%%); } /* DJ_MD9 (-vE-DJ_MD9) */
+.flair-admin.flair-team-lead.flair-communications.flair-blue-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%communications%%) url(%%blue-star%%); } /* DJ_MD9 (-vE-DJ_MD9) */
 .flair-seeder.flair-red-star::after { content: url(%%seeder%%) url(%%red-star%%); } /* PatheticShot (PatheticShot) */
 .flair-admin.flair-accounting.flair-red-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%red-star%%); } /* Xythar12 (Xythar) */
-.flair-team-lead.flair-operations.flair-developer.flair-blue-star::after { content: url(%%team-lead%%) url(%%operations%%) url(%%developer%%) url(%%blue-star%%); } /* Draegerr (Draeger) */
+.flair-team-lead.flair-operations.flair-blue-star::after { content: url(%%team-lead%%) url(%%operations%%) url(%%blue-star%%); } /* Draegerr (Draeger) */
 .flair-communications.flair-red-star::after { content: url(%%communications%%) url(%%red-star%%); } /* KiriONE (KiriONE) */
+.flair-accounting.flair-seeder::after { content: url(%%accounting%%) url(%%seeder%%); } /* whywipe (I_never_wipe) */
 
 /* RANKS */
 
+.flair-colonel{background: url(%%colonel%%) -3px 5px no-repeat;}
 .flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general, .flair-msergeant {
     background: url(%%ranks%%) 3px 1px no-repeat;
 }
@@ -1188,4 +1189,3 @@ width: 300px;
     margin-top: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
- }
