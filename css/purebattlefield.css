@@ -410,6 +410,7 @@ a[href$='#special']:after { content: url(%%special%%); }
 a[href$='#team-lead']:after { content: url(%%team-lead%%); }
 a[href$='#accounting']:after { content: url(%%accounting%%); }
 a[href$='#seeder']:after { content: url(%%seeder%%); }
+a[href$='#twitch']:after { content: url(%%commendation%%); }
 
 /* koz mods. now time to pray this doesnt break anything */
 /* hover */
@@ -460,7 +461,8 @@ a[href$='#seeder']:after { content: url(%%seeder%%); }
     font-size: 12pt;
     padding: 4px;
     color: #336699;
-    cursor: default
+    cursor: default;
+	text-align: left
     }
 /*styling menu items*/
 .titlebox blockquote:first-child ul li:hover {
@@ -807,9 +809,9 @@ body:not(.res-nightmode) .footer.rounded {
 /* Generally needed if user flair is greater than two ribbons */
 
 
-.flair-admin.flair-events.flair-blue-star::after { content: url(%%admin%%) url(%%events%%) url(%%blue-star%%); } /* DotGaming (BaconBagel) */
+.flair-admin.flair-events.flair-bronze-star::after { content: url(%%admin%%) url(%%events%%) url(%%bronze-star%%); } /* DotGaming (BaconBagel) */
 .flair-admin.flair-team-lead.flair-bronze-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%bronze-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
-.flair-accounting.flair-seeder.flair-team-lead.flair-bronze-star::after { content: url(%%accounting%%) url(%%seeder%%) url(%%team-lead%%) url(%%bronze-star%%); } /* nofear1056 (Jester345) */
+.flair-accounting.flair-project-lead.flair-bronze-star::after { content: url(%%accounting%%) url(%%project-lead%%) url(%%bronze-star%%); } /* nofear1056 (Jester345) */
 .flair-team-lead.flair-gold-star::after { content: url(%%team-lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
 .flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
 .flair-admin.flair-seeder::after { content: url(%%admin%%) url(%%seeder%%); } /* Xythar12 (Xythar) */ 
@@ -819,13 +821,20 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-events.flair-operations.flair-blue-star::after { content: url(%%events%%) url(%%operations%%) url(%%blue-star%%); } /* Smileynulk (Smileynulk) */
 .flair-admin.flair-seeder.flair-red-star::after { content: url(%%admin%%) url(%%seeder%%) url(%%red-star%%); } /* FullMetaI (FulIMetal) */
 .flair-accounting.flair-blue-star::after { content: url(%%accounting%%) url(%%blue-star%%); } /* lax4life001 (lax4life001) */
-.flair-admin.flair-team-lead.flair-communications.flair-blue-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%communications%%) url(%%blue-star%%); } /* DJ_MD9 (-vE-DJ_MD9) */
+.flair-admin.flair-team-lead.flair-communications.flair-bronze-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%communications%%) url(%%bronze-star%%); } /* DJ_MD9 (-vE-DJ_MD9) */
 .flair-seeder.flair-red-star::after { content: url(%%seeder%%) url(%%red-star%%); } /* PatheticShot (PatheticShot) */
-.flair-admin.flair-accounting.flair-red-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%red-star%%); } /* Xythar12 (Xythar) */
+.flair-admin.flair-accounting.flair-blue-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%blue-star%%); } /* Xythar12 (Xythar) */
 .flair-team-lead.flair-operations.flair-blue-star::after { content: url(%%team-lead%%) url(%%operations%%) url(%%blue-star%%); } /* Draegerr (Draeger) */
 .flair-communications.flair-red-star::after { content: url(%%communications%%) url(%%red-star%%); } /* KiriONE (KiriONE) */
-.flair-accounting.flair-seeder::after { content: url(%%accounting%%) url(%%seeder%%); } /* whywipe (I_never_wipe) */
-
+.flair-accounting.flair-seeder.flair-red-star::after { content: url(%%accounting%%) url(%%seeder%%) url(%%red-star%%) ; } /* whywipe (I_never_wipe) */
+.flair-team-lead.flair-developer.flair-red-star::after { content: url(%%team-lead%%) url(%%developer%%) url(%%red-star%%); } /* lonely_jaguar (analytalica) */
+.flair-events.flair-seeder.flair::after { content: url(%%events%%) url(%%seeder%%); } /* SIothies (Ouchiess) */
+.flair-team-lead.flair-special.flair-blue-star::after { content: url(%%team-lead%%) url(%%special%%) url(%%blue-star%%); } /* avacado77 */
+.flair-team-lead.flair-accounting.flair-seeder.flair-red-star::after { content: url(%%team-lead%%) url(%%accounting%%) url(%%seeder%%) url(%%red-star%%); } /* Melloline (Melloline1) */
+.flair-operations.flair-team-lead.flair-red-star::after { content: url(%%operations%%) url(%%team-lead%%) url(%%red-star%%); }/* jmurrell (Mish_poLy) */
+.flair-project-lead.flair-commendation.flair-red-star::after { content: url(%%project-lead%%) url(%%commendation%%) url(%%red-star%%); }/* The_War_Machine (iTheiWarmachinei) */
+.flair-admin.flair-team-lead.flair-red-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%red-star%%); } /* soccernamlak (soccernamlak) */
+.flair-operations.flair-seeder.flair-bronze-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%bronze-star%%); } /* lebeauc (Triplet-Threat) */
 /* RANKS */
 
 .flair-colonel{background: url(%%colonel%%) -3px 5px no-repeat;}
@@ -1061,7 +1070,7 @@ body:not(.subscriber) .side .md > ol > li:first-child a {
     border: 1px solid #4C535D;
     position: absolute;
     margin-top: 45px;
-    left: 474px;
+    left: 662px;
     width: 297px;
     text-align: center;
     padding: 5px 0;
@@ -1073,7 +1082,7 @@ body:not(.subscriber) .side .md > ol > li:first-child a {
     height: 29px;
 }
 body:not(.subscriber).comments-page .side .md > ol > li:first-child a {
-    left: 474px;
+    left: 508px;
 }
 body:not(.subscriber) .side .md > ol > li:first-child a:hover {
     text-decoration: underline;
@@ -1134,8 +1143,6 @@ a[href="http://www.reddit.com/r/purebattlefield/faq#PBScreensUserGuide"]::after 
 
 
 
-
-
 /***************************************************************************
 
 **************************** EDIT STUFF HERE! *****************************
@@ -1148,7 +1155,7 @@ body.subscriber.comments-page > .content::before, body.subscriber.listing-page >
 }
 /* Header background image */
 body:not(.res-nightmode) #header {
-    background-image: url(%%header21%%);
+    background-image: url(%%header7%%);
 } /* choose a header header1 through header26 */
 
 
