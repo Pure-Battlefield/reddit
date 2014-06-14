@@ -400,17 +400,31 @@ body:not(.res-nightmode) .side .md h4 {
 
 /* Ribbons in sidebar */
 
-a[href$='#admin']:after { content: url(%%admin%%); }
-a[href$='#project-lead']:after { content: url(%%project-lead%%); }
-a[href$='#operations']:after { content: url(%%operations%%); }
-a[href$='#developer']:after { content: url(%%developer%%); }
-a[href$='#communications']:after { content: url(%%communications%%); }
-a[href$='#events']:after { content: url(%%events%%); }
-a[href$='#special']:after { content: url(%%special%%); }
-a[href$='#team-lead']:after { content: url(%%team-lead%%); }
-a[href$='#accounting']:after { content: url(%%accounting%%); }
-a[href$='#seeder']:after { content: url(%%seeder%%); }
-a[href$='#twitch']:after { content: url(%%commendation%%); }
+a[href$='#admin']::after { content: ""; background: url(%%a-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#operations']::after { content: ""; background: url(%%o-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#developer']::after { content: ""; background: url(%%d-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#communications']::after { content: ""; background: url(%%c-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#events']::after { content: ""; background: url(%%e-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#special']:after { content: ""; background: url(%%p-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#accounting']::after { content: ""; background: url(%%r-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#seeder']::after { content: ""; background: url(%%s-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#blank-gold']::after { content: ""; background: url(%%blank-sprites%%) 0px -88px no-repeat; padding-left: 18px; }
+a[href$='#twitch']::after { content: ""; background: url(%%t-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
+a[href$='#c-silver']::after { content: ""; background: url(%%c-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#c-bronze']::after { content: ""; background: url(%%c-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#e-silver']::after { content: ""; background: url(%%e-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#e-bronze']::after { content: ""; background: url(%%e-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#c-silver']::after { content: ""; background: url(%%c-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#o-silver']::after { content: ""; background: url(%%o-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#o-bronze']::after { content: ""; background: url(%%o-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#r-silver']::after { content: ""; background: url(%%r-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#r-bronze']::after { content: ""; background: url(%%r-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#a-silver']::after { content: ""; background: url(%%a-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#a-bronze']::after { content: ""; background: url(%%a-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#d-silver']::after { content: ""; background: url(%%d-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#p-silver']::after { content: ""; background: url(%%p-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#p-bronze']::after { content: ""; background: url(%%p-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
+a[href$='#s-bronze']::after { content: ""; background: url(%%s-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
 
 /* koz mods. now time to pray this doesnt break anything */
 /* hover */
@@ -507,23 +521,20 @@ body:not(.res-nightmode) .footer.rounded {
 }
 
 
-
-
-
 /* ====================================
-============= $Flair ===============
+============= $Flair ==============
 ==================================== */
 
-/* User Flair */
-
 .flair {
-    font-weight: bold;
-    background-color: #fff !important;
-    border: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    line-height: 18px; padding: 0 2px 0 22px;
+  font-weight: bold;
+  background: none;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  line-height: 18px;
+  padding: 0 2px 0 2px;
+  height: 22px;
 }
 
 .flair:empty:before {
@@ -533,335 +544,535 @@ body:not(.res-nightmode) .footer.rounded {
   font-size: 80%;
 }
 
-/* RIBBONS */
+.flair::after{
+    height: 22px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    color: rgb(136, 136, 136);
+    font-weight: normal;
+    font-style: italic;
+ }
+ 
+.flair:hover::after{background: none; padding-right: 0;}
 
-.flair-admin::after, .flair-project-lead::after, .flair-operations::after, .flair-developer::after, .flair-communications::after, .flair-events::after, .flair-special::after, .flair-bronze-star::after, .flair-silver-star::after, .flair-gold-star::after, .flair-red-star::after, .flair-blue-star::after, .flair-distinguished-service::after, .flair-commendation::after, .flair-team-lead::after, .flair-medal-of-honor::after, .flair-accounting::after, .flair-seeder::after {
-    line-height: 18px; font-size: 18px;
-}
+/* single badges */
+/* images */
 
-.flair-admin::after { content: url(%%admin%%); }
-.flair-project-lead::after { content: url(%%project-lead%%); }
-.flair-operations::after { content: url(%%operations%%); }
-.flair-developer::after { content: url(%%developer%%); }
-.flair-communications::after { content: url(%%communications%%); }
-.flair-events::after { content: url(%%events%%); }
-.flair-special::after { content: url(%%special%%); }
-.flair-bronze-star::after { content: url(%%bronze-star%%); }
-.flair-silver-star::after { content: url(%%silver-star%%); }
-.flair-gold-star::after { content: url(%%gold-star%%); }
-.flair-red-star::after { content: url(%%red-star%%); }
-.flair-blue-star::after { content: url(%%blue-star%%); }
-.flair-distinguished-service::after { content: url(%%distinguished-service%%); }
-.flair-commendation::after { content: url(%%commendation%%); }
-.flair-team-lead::after { content: url(%%team-lead%%); }
-.flair-medal-of-honor::after { content: url(%%medal-of-honor%%); }
-.flair-accounting::after { content: url(%%accounting%%); }
-.flair-seeder::after { content: url(%%seeder%%); }
-.flair-bucket::after { content: url(%%bucket%%); }
+.flair-a-blue::after {background: url(%%a-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-a-bronze::after {background: url(%%a-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-a-silver::after {background: url(%%a-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-a-gold::after {background: url(%%a-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
-.flair-admin.flair-project-lead::after { content: url(%%admin%%) url(%%project-lead%%); }
-.flair-admin.flair-operations::after { content: url(%%admin%%) url(%%operations%%); }
-.flair-admin.flair-developer::after { content: url(%%admin%%) url(%%developer%%); }
-.flair-admin.flair-communications::after { content: url(%%admin%%) url(%%communications%%); }
-.flair-admin.flair-events::after { content: url(%%admin%%) url(%%events%%); }
-.flair-admin.flair-special::after { content: url(%%admin%%) url(%%special%%); }
-.flair-admin.flair-bronze-star::after { content: url(%%admin%%) url(%%bronze-star%%); }
-.flair-admin.flair-silver-star::after { content: url(%%admin%%) url(%%silver-star%%); }
-.flair-admin.flair-gold-star::after { content: url(%%admin%%) url(%%gold-star%%); }
-.flair-admin.flair-red-star::after { content: url(%%admin%%) url(%%red-star%%); }
-.flair-admin.flair-blue-star::after { content: url(%%admin%%) url(%%blue-star%%); }
-.flair-admin.flair-distinguished-service::after { content: url(%%admin%%) url(%%distinguished-service%%); }
-.flair-admin.flair-commendation::after { content: url(%%admin%%) url(%%commendation%%); }
-.flair-admin.flair-team-lead::after { content: url(%%admin%%) url(%%team-lead%%); }
-.flair-admin.flair-medal-of-honor::after { content: url(%%admin%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-developer.flair-team-lead::after { content: url(%%admin%%) url(%%developer%%) url(%%team-lead%%); }
-.flair-admin.flair-accounting::after { content: url(%%admin%%) url(%%accounting%%); }
-.flair-admin.flair-project-lead.flair-operations::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%); }
-.flair-admin.flair-project-lead.flair-developer::after { content: url(%%admin%%) url(%%project-lead%%) url(%%developer%%); }
-.flair-admin.flair-project-lead.flair-communications::after { content: url(%%admin%%) url(%%project-lead%%) url(%%communications%%); }
-.flair-admin.flair-project-lead.flair-events::after { content: url(%%admin%%) url(%%project-lead%%) url(%%events%%); }
-.flair-admin.flair-project-lead.flair-special::after { content: url(%%admin%%) url(%%project-lead%%) url(%%special%%); }
-.flair-admin.flair-project-lead.flair-bronze-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%bronze-star%%); }
-.flair-admin.flair-project-lead.flair-silver-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%silver-star%%); }
-.flair-admin.flair-project-lead.flair-gold-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%gold-star%%); }
-.flair-admin.flair-project-lead.flair-red-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%red-star%%); }
-.flair-admin.flair-project-lead.flair-blue-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%blue-star%%); }
-.flair-admin.flair-project-lead.flair-distinguished-service::after { content: url(%%admin%%) url(%%project-lead%%) url(%%distinguished-service%%); }
-.flair-admin.flair-project-lead.flair-commendation::after { content: url(%%admin%%) url(%%project-lead%%) url(%%commendation%%); }
-.flair-admin.flair-project-lead.flair-team-lead::after { content: url(%%admin%%) url(%%project-lead%%) url(%%team-lead%%); }
-.flair-admin.flair-project-lead.flair-medal-of-honor::after { content: url(%%admin%%) url(%%project-lead%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-communications::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%communications%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-events::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%events%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-special::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%special%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-bronze-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%bronze-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-silver-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%silver-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-gold-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%gold-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-red-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%red-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-blue-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%blue-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-distinguished-service::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%distinguished-service%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-commendation::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%commendation%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-team-lead::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%team-lead%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-medal-of-honor::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-events::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%events%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-special::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%special%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-silver-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%silver-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-gold-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%gold-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-red-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%red-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-blue-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%blue-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-distinguished-service::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%distinguished-service%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-commendation::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-team-lead::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%team-lead%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-medal-of-honor::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-special::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%special%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-silver-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-gold-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-red-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-blue-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-commendation::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-team-lead::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%team-lead%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-medal-of-honor::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%medal-of-honor%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-special::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%special%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-bronze-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%bronze-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-silver-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%silver-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-gold-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%gold-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-red-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%red-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-blue-star::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%blue-star%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-distinguished-service::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%distinguished-service%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-commendation::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%commendation%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-team-lead::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%team-lead%%); }
-.flair-admin.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-medal-of-honor::after { content: url(%%admin%%) url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%medal-of-honor%%); }
+.flair-c-blue::after {background: url(%%c-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-c-bronze::after {background: url(%%c-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-c-silver::after {background: url(%%c-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-c-gold::after {background: url(%%c-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
-.flair-project-lead.flair-operations::after { content: url(%%project-lead%%) url(%%operations%%); }
-.flair-project-lead.flair-developer::after { content: url(%%project-lead%%) url(%%developer%%); }
-.flair-project-lead.flair-communications::after { content: url(%%project-lead%%) url(%%communications%%); }
-.flair-project-lead.flair-events::after { content: url(%%project-lead%%) url(%%events%%); }
-.flair-project-lead.flair-special::after { content: url(%%project-lead%%) url(%%special%%); }
-.flair-project-lead.flair-bronze-star::after { content: url(%%project-lead%%) url(%%bronze-star%%); }
-.flair-project-lead.flair-silver-star::after { content: url(%%project-lead%%) url(%%silver-star%%); }
-.flair-project-lead.flair-gold-star::after { content: url(%%project-lead%%) url(%%gold-star%%); }
-.flair-project-lead.flair-red-star::after { content: url(%%project-lead%%) url(%%red-star%%); }
-.flair-project-lead.flair-blue-star::after { content: url(%%project-lead%%) url(%%blue-star%%); }
-.flair-project-lead.flair-distinguished-service::after { content: url(%%project-lead%%) url(%%distinguished-service%%); }
-.flair-project-lead.flair-commendation::after { content: url(%%project-lead%%) url(%%commendation%%); }
-.flair-project-lead.flair-team-lead::after { content: url(%%project-lead%%) url(%%team-lead%%); }
-.flair-project-lead.flair-medal-of-honor::after { content: url(%%project-lead%%) url(%%medal-of-honor%%); }
-.flair-project-lead.flair-operations.flair-developer::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%); }
-.flair-project-lead.flair-operations.flair-communications::after { content: url(%%project-lead%%) url(%%operations%%) url(%%communications%%); }
-.flair-project-lead.flair-operations.flair-events::after { content: url(%%project-lead%%) url(%%operations%%) url(%%events%%); }
-.flair-project-lead.flair-operations.flair-special::after { content: url(%%project-lead%%) url(%%operations%%) url(%%special%%); }
-.flair-project-lead.flair-operations.flair-bronze-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%bronze-star%%); }
-.flair-project-lead.flair-operations.flair-silver-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%silver-star%%); }
-.flair-project-lead.flair-operations.flair-gold-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%gold-star%%); }
-.flair-project-lead.flair-operations.flair-red-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%red-star%%); }
-.flair-project-lead.flair-operations.flair-blue-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%blue-star%%); }
-.flair-project-lead.flair-operations.flair-distinguished-service::after { content: url(%%project-lead%%) url(%%operations%%) url(%%distinguished-service%%); }
-.flair-project-lead.flair-operations.flair-commendation::after { content: url(%%project-lead%%) url(%%operations%%) url(%%commendation%%); }
-.flair-project-lead.flair-operations.flair-team-lead::after { content: url(%%project-lead%%) url(%%operations%%) url(%%team-lead%%); }
-.flair-project-lead.flair-operations.flair-medal-of-honor::after { content: url(%%project-lead%%) url(%%operations%%) url(%%medal-of-honor%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-events::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%events%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-special::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%special%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-silver-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%silver-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-gold-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%gold-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-red-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%red-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-blue-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%blue-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-distinguished-service::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%distinguished-service%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-commendation::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-team-lead::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%team-lead%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-medal-of-honor::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-special::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%special%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-silver-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-gold-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-red-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-blue-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-commendation::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-team-lead::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%team-lead%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-medal-of-honor::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%medal-of-honor%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-special::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%special%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-bronze-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%bronze-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-silver-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%silver-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-gold-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%gold-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-red-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%red-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-blue-star::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%blue-star%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-distinguished-service::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%distinguished-service%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-commendation::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%commendation%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-team-lead::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%team-lead%%); }
-.flair-project-lead.flair-operations.flair-developer.flair-communications.flair-events.flair-medal-of-honor::after { content: url(%%project-lead%%) url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%medal-of-honor%%); }
+.flair-d-blue::after {background: url(%%d-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-d-bronze::after {background: url(%%d-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-d-silver::after {background: url(%%d-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-d-gold::after {background: url(%%d-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
-.flair-operations.flair-developer::after { content: url(%%operations%%) url(%%developer%%); }
-.flair-operations.flair-communications::after { content: url(%%operations%%) url(%%communications%%); }
-.flair-operations.flair-events::after { content: url(%%operations%%) url(%%events%%); }
-.flair-operations.flair-special::after { content: url(%%operations%%) url(%%special%%); }
-.flair-operations.flair-bronze-star::after { content: url(%%operations%%) url(%%bronze-star%%); }
-.flair-operations.flair-silver-star::after { content: url(%%operations%%) url(%%silver-star%%); }
-.flair-operations.flair-gold-star::after { content: url(%%operations%%) url(%%gold-star%%); }
-.flair-operations.flair-red-star::after { content: url(%%operations%%) url(%%red-star%%); }
-.flair-operations.flair-blue-star::after { content: url(%%operations%%) url(%%blue-star%%); }
-.flair-operations.flair-distinguished-service::after { content: url(%%operations%%) url(%%distinguished-service%%); }
-.flair-operations.flair-commendation::after { content: url(%%operations%%) url(%%commendation%%); }
-.flair-operations.flair-team-lead::after { content: url(%%operations%%) url(%%team-lead%%); }
-.flair-operations.flair-medal-of-honor::after { content: url(%%operations%%) url(%%medal-of-honor%%); }
-.flair-operations.flair-developer.flair-communications::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%); }
-.flair-operations.flair-developer.flair-events::after { content: url(%%operations%%) url(%%developer%%) url(%%events%%); }
-.flair-operations.flair-developer.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%special%%); }
-.flair-operations.flair-developer.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%bronze-star%%); }
-.flair-operations.flair-developer.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%silver-star%%); }
-.flair-operations.flair-developer.flair-gold-star::after { content: url(%%operations%%) url(%%developer%%) url(%%gold-star%%); }
-.flair-operations.flair-developer.flair-red-star::after { content: url(%%operations%%) url(%%developer%%) url(%%red-star%%); }
-.flair-operations.flair-developer.flair-blue-star::after { content: url(%%operations%%) url(%%developer%%) url(%%blue-star%%); }
-.flair-operations.flair-developer.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%distinguished-service%%); }
-.flair-operations.flair-developer.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%commendation%%); }
-.flair-operations.flair-developer.flair-team-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%team-lead%%); }
-.flair-operations.flair-developer.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-operations.flair-developer.flair-communications.flair-events::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%); }
-.flair-operations.flair-developer.flair-communications.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%special%%); }
-.flair-operations.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-gold-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-red-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-blue-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
-.flair-operations.flair-developer.flair-communications.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
-.flair-operations.flair-developer.flair-communications.flair-team-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%team-lead%%); }
-.flair-operations.flair-developer.flair-communications.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%medal-of-honor%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-special::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%special%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-bronze-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%bronze-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-silver-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%silver-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-gold-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%gold-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-red-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%red-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-blue-star::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%blue-star%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-distinguished-service::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%distinguished-service%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-commendation::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%commendation%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-team-lead::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%team-lead%%); }
-.flair-operations.flair-developer.flair-communications.flair-events.flair-medal-of-honor::after { content: url(%%operations%%) url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%medal-of-honor%%); }
+.flair-e-blue::after {background: url(%%e-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-e-bronze::after {background: url(%%e-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-e-silver::after {background: url(%%e-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-e-gold::after {background: url(%%e-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
-.flair-developer.flair-communications::after { content: url(%%developer%%) url(%%communications%%); }
-.flair-developer.flair-events::after { content: url(%%developer%%) url(%%events%%); }
-.flair-developer.flair-special::after { content: url(%%developer%%) url(%%special%%); }
-.flair-developer.flair-bronze-star::after { content: url(%%developer%%) url(%%bronze-star%%); }
-.flair-developer.flair-silver-star::after { content: url(%%developer%%) url(%%silver-star%%); }
-.flair-developer.flair-gold-star::after { content: url(%%developer%%) url(%%gold-star%%); }
-.flair-developer.flair-red-star::after { content: url(%%developer%%) url(%%red-star%%); }
-.flair-developer.flair-blue-star::after { content: url(%%developer%%) url(%%blue-star%%); }
-.flair-developer.flair-distinguished-service::after { content: url(%%developer%%) url(%%distinguished-service%%); }
-.flair-developer.flair-commendation::after { content: url(%%developer%%) url(%%commendation%%); }
-.flair-developer.flair-team-lead::after { content: url(%%developer%%) url(%%team-lead%%); }
-.flair-developer.flair-medal-of-honor::after { content: url(%%developer%%) url(%%medal-of-honor%%); }
-.flair-developer.flair-communications.flair-events::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%); }
-.flair-developer.flair-communications.flair-special::after { content: url(%%developer%%) url(%%communications%%) url(%%special%%); }
-.flair-developer.flair-communications.flair-bronze-star::after { content: url(%%developer%%) url(%%communications%%) url(%%bronze-star%%); }
-.flair-developer.flair-communications.flair-silver-star::after { content: url(%%developer%%) url(%%communications%%) url(%%silver-star%%); }
-.flair-developer.flair-communications.flair-gold-star::after { content: url(%%developer%%) url(%%communications%%) url(%%gold-star%%); }
-.flair-developer.flair-communications.flair-red-star::after { content: url(%%developer%%) url(%%communications%%) url(%%red-star%%); }
-.flair-developer.flair-communications.flair-blue-star::after { content: url(%%developer%%) url(%%communications%%) url(%%blue-star%%); }
-.flair-developer.flair-communications.flair-distinguished-service::after { content: url(%%developer%%) url(%%communications%%) url(%%distinguished-service%%); }
-.flair-developer.flair-communications.flair-commendation::after { content: url(%%developer%%) url(%%communications%%) url(%%commendation%%); }
-.flair-developer.flair-communications.flair-team-lead::after { content: url(%%developer%%) url(%%communications%%) url(%%team-lead%%); }
-.flair-developer.flair-communications.flair-medal-of-honor::after { content: url(%%developer%%) url(%%communications%%) url(%%medal-of-honor%%); }
-.flair-developer.flair-communications.flair-events.flair-special::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%special%%); }
-.flair-developer.flair-communications.flair-events.flair-bronze-star::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%bronze-star%%); }
-.flair-developer.flair-communications.flair-events.flair-silver-star::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%silver-star%%); }
-.flair-developer.flair-communications.flair-events.flair-gold-star::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%gold-star%%); }
-.flair-developer.flair-communications.flair-events.flair-red-star::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%red-star%%); }
-.flair-developer.flair-communications.flair-events.flair-blue-star::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%blue-star%%); }
-.flair-developer.flair-communications.flair-events.flair-distinguished-service::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%distinguished-service%%); }
-.flair-developer.flair-communications.flair-events.flair-commendation::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%commendation%%); }
-.flair-developer.flair-communications.flair-events.flair-team-lead::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%team-lead%%); }
-.flair-developer.flair-communications.flair-events.flair-medal-of-honor::after { content: url(%%developer%%) url(%%communications%%) url(%%events%%) url(%%medal-of-honor%%); }
+.flair-o-blue::after {background: url(%%o-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-o-bronze::after {background: url(%%o-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-o-silver::after {background: url(%%o-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-o-gold::after {background: url(%%o-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
-.flair-communications.flair-events::after { content: url(%%communications%%) url(%%events%%); }
-.flair-communications.flair-special::after { content: url(%%communications%%) url(%%special%%); }
-.flair-communications.flair-events.flair-special::after { content: url(%%communications%%) url(%%events%%) url(%%special%%); }
-.flair-events.flair-special::after { content: url(%%events%%) url(%%special%%); }
-.flair-events.flair-bronze-star::after { content: url(%%events%%) url(%%bronze-star%%); }
-.flair-events.flair-silver-star::after { content: url(%%events%%) url(%%silver-star%%); }
-.flair-events.flair-gold-star::after { content: url(%%events%%) url(%%gold-star%%); }
-.flair-events.flair-red-star::after { content: url(%%events%%) url(%%red-star%%); }
-.flair-events.flair-blue-star::after { content: url(%%events%%) url(%%blue-star%%); }
-.flair-events.flair-distinguished-service::after { content: url(%%events%%) url(%%distinguished-service%%); }
-.flair-events.flair-commendation::after { content: url(%%events%%) url(%%commendation%%); }
-.flair-events.flair-team-lead::after { content: url(%%events%%) url(%%team-lead%%); }
-.flair-events.flair-medal-of-honor::after { content: url(%%events%%) url(%%medal-of-honor%%); }
+.flair-p-blue::after {background: url(%%p-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-p-bronze::after {background: url(%%p-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-p-silver::after {background: url(%%p-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-p-gold::after {background: url(%%p-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
+.flair-r-blue::after {background: url(%%r-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-r-bronze::after {background: url(%%r-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-r-silver::after {background: url(%%r-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-r-gold::after {background: url(%%r-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
 
-/* on demand code. sorry for this. this code was inserted for various needs and because Kozonak didn't want to touch the wall of text above. Again, sorry. */
-/* seeder code */
-.flair-admin.flair-accounting.flair-seeder::after { content: url(%%admin%%) url(%%accounting%%) url(%%seeder%%); } /* cml1of4 - Canadian_GTR */
-.flair-operations.flair-seeder.flair-blue-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%blue-star%%); } /* gringopar */
-.flair-admin.flair-seeder.flair-blue-star::after { content: url(%%admin%%) url(%%seeder%%) url(%%blue-star%%); } /* ratdart */
-.flair-admin.flair-seeder.flair-events::after { content: url(%%admin%%) url(%%seeder%%) url(%%events%%); } /* daveden123 */
+.flair-s-pale::after {background: url(%%s-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-s-bronze::after {background: url(%%s-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-s-silver::after {background: url(%%s-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-s-gold::after {background: url(%%s-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
+
+.flair-t-pale::after {background: url(%%t-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-t-bronze::after {background: url(%%t-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-t-silver::after {background: url(%%t-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-t-gold::after {background: url(%%t-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
+
+.flair-blank-pale::after {background: url(%%blank-sprites%%) 100% 0px no-repeat; padding-right: 18px; content: "";}
+.flair-blank-blue::after {background: url(%%blank-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-blank-bronze::after {background: url(%%blank-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-blank-silver::after {background: url(%%blank-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
+.flair-blank-gold::after {background: url(%%blank-sprites%%) 100% -88px no-repeat; padding-right: 18px; content: "";}
+.flair-blank-platinum::after {background: url(%%blank-sprites%%) 100% -110px no-repeat; padding-right: 18px; content: "";}
+
+.flair-smile-pale::after {background: url(%%smile-sprites%%) 100% 0px no-repeat; padding-right:18px; content: "";}
+.flair-smile-bronze::after {background: url(%%smile-sprites%%) 100% -22px no-repeat; padding-right: 18px; content: "";}
+.flair-smile-silver::after {background: url(%%smile-sprites%%) 100% -44px no-repeat; padding-right: 18px; content: "";}
+.flair-smile-gold::after {background: url(%%smile-sprites%%) 100% -66px no-repeat; padding-right: 18px; content: "";}
+
+/* coins */
+.flair-coin-white::after { content:  url(%%coin-white%%); }.flair-coin-white:hover::after { content: "$5/month donor";}
+.flair-coin-pale::after { content:  url(%%coin-pale%%); }.flair-coin-pale:hover::after { content: "$10/month donor";}
+.flair-coin-blue::after { content:  url(%%coin-blue%%); }.flair-coin-blue:hover::after { content: "$25/month donor";}
+.flair-coin-bronze::after { content:  url(%%coin-bronze%%); }.flair-coin-bronze:hover::after { content: "$50/month donor";}
+.flair-coin-silver::after { content:  url(%%coin-silver%%); }.flair-coin-silver:hover::after { content: "$100/month donor";}
+.flair-coin-gold::after { content:  url(%%coin-gold%%); }.flair-coin-gold:hover::after { content: "$250/month donor";}
+.flair-coin-platinum::after { content:  url(%%coin-platinum%%); }.flair-coin-platinum:hover::after { content: "$500/month donor";}
+
+/* medals */
+
+.flair-medal-white::after { content:  url(%%medal-white%%); }.flair-medal-white:hover::after { content: "50 cumulative donor/volunteer credits";}
+.flair-medal-pale::after { content:  url(%%medal-pale%%); }.flair-medal-pale:hover::after { content: "100 cumulative donor/volunteer credits";}
+.flair-medal-blue::after { content:  url(%%medal-blue%%); }.flair-medal-blue:hover::after { content: "250 cumulative donor/volunteer credits";}
+.flair-medal-bronze::after { content:  url(%%medal-bronze%%); }.flair-medal-bronze:hover::after { content: "500 cumulative donor/volunteer credits";}
+.flair-medal-silver::after { content:  url(%%medal-silver%%); }.flair-medal-silver:hover::after { content: "1000 cumulative donor/volunteer credits";}
+.flair-medal-gold::after { content:  url(%%medal-gold%%); }.flair-medal-gold:hover::after { content: "2500 cumulative donor/volunteer credits";}
+.flair-medal-platinum::after { content:  url(%%medal-platinum%%); }.flair-medal-platinum:hover::after { content: "5000 cumulative donor/volunteer credits";}
 
 
 
-.flair-accounting.flair-red-star::after {content: url(%%accounting%%) url(%%red-star%%);}
+/* coins + medals */
 
-/* Custom ribbon flair */
-/* Generally needed if user flair is greater than two ribbons */
+.flair-medal-white.flair-coin-white::after { content: url(%%medal-white%%) url(%%coin-white%%); }.flair-medal-white.flair-coin-white:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-white.flair-coin-pale::after { content: url(%%medal-white%%) url(%%coin-pale%%); }.flair-medal-white.flair-coin-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-white.flair-coin-blue::after { content: url(%%medal-white%%) url(%%coin-blue%%); }.flair-medal-white.flair-coin-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor";}
+.flair-medal-pale.flair-coin-white::after { content: url(%%medal-pale%%) url(%%coin-white%%); }.flair-medal-pale.flair-coin-white:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-pale.flair-coin-pale::after { content: url(%%medal-pale%%) url(%%coin-pale%%); }.flair-medal-pale.flair-coin-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-pale.flair-coin-blue::after { content: url(%%medal-pale%%) url(%%coin-blue%%); }.flair-medal-pale.flair-coin-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor";}
+.flair-medal-blue.flair-coin-white::after { content: url(%%medal-blue%%) url(%%coin-white%%); }.flair-medal-blue.flair-coin-white:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-blue.flair-coin-pale::after { content: url(%%medal-blue%%) url(%%coin-pale%%); }.flair-medal-blue.flair-coin-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-blue.flair-coin-blue::after { content: url(%%medal-blue%%) url(%%coin-blue%%); }.flair-medal-blue.flair-coin-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor";}
+.flair-medal-bronze.flair-coin-white::after { content: url(%%medal-bronze%%) url(%%coin-white%%); }.flair-medal-bronze.flair-coin-white:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-bronze.flair-coin-pale::after { content: url(%%medal-bronze%%) url(%%coin-pale%%); }.flair-medal-bronze.flair-coin-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-bronze.flair-coin-blue::after { content: url(%%medal-bronze%%) url(%%coin-blue%%); }.flair-medal-bronze.flair-coin-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor";}
+.flair-medal-silver.flair-coin-white::after { content: url(%%medal-silver%%) url(%%coin-white%%); }.flair-medal-silver.flair-coin-white:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-silver.flair-coin-pale::after { content: url(%%medal-silver%%) url(%%coin-pale%%); }.flair-medal-silver.flair-coin-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-silver.flair-coin-blue::after { content: url(%%medal-silver%%) url(%%coin-blue%%); }.flair-medal-silver.flair-coin-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor";}
+.flair-medal-gold.flair-coin-white::after { content: url(%%medal-gold%%) url(%%coin-white%%); }.flair-medal-gold.flair-coin-white:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-gold.flair-coin-pale::after { content: url(%%medal-gold%%) url(%%coin-pale%%); }.flair-medal-gold.flair-coin-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-gold.flair-coin-blue::after { content: url(%%medal-gold%%) url(%%coin-blue%%); }.flair-medal-gold.flair-coin-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor";}
+.flair-medal-platinum.flair-coin-white::after { content: url(%%medal-platinum%%) url(%%coin-white%%); }.flair-medal-platinum.flair-coin-white:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor";}
+.flair-medal-platinum.flair-coin-pale::after { content: url(%%medal-platinum%%) url(%%coin-pale%%); }.flair-medal-platinum.flair-coin-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor";}
+.flair-medal-platinum.flair-coin-blue::after { content: url(%%medal-platinum%%) url(%%coin-blue%%); }.flair-medal-platinum.flair-coin-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor";}
+
+/* volunteer flair */
+
+/* coin + medal + single badge moues-over text cominations; includes no coin, no medal, and solo-badge; for base level badges */
+
+.flair-medal-white.flair-coin-white.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-white.flair-coin-white.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-white.flair-coin-white.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-white.flair-coin-white.flair-e-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-white.flair-coin-white.flair-o-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-white.flair-coin-white.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-white.flair-coin-white.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-white.flair-coin-white.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-white.flair-coin-white.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-white.flair-coin-white.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-e-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-o-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-white.flair-coin-pale.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-e-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-o-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-white.flair-coin-blue.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-white.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-white.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-white.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-white.flair-e-blue:hover::after { content: "50 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-white.flair-o-blue:hover::after { content: "50 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-white.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-white.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-white.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-white.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-white.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-e-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-o-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-pale.flair-coin-white.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-e-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-o-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-pale.flair-coin-pale.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-e-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-o-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-pale.flair-coin-blue.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-pale.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-pale.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-pale.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-pale.flair-e-blue:hover::after { content: "100 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-pale.flair-o-blue:hover::after { content: "100 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-pale.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-pale.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-pale.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-pale.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-pale.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-e-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-o-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-blue.flair-coin-white.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-e-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-o-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-blue.flair-coin-pale.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-e-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-o-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-blue.flair-coin-blue.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-blue.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-blue.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-blue.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-blue.flair-e-blue:hover::after { content: "250 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-blue.flair-o-blue:hover::after { content: "250 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-blue.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-blue.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-blue.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-blue.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-blue.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-e-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-o-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-bronze.flair-coin-white.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-e-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-o-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-bronze.flair-coin-pale.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-e-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-o-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-bronze.flair-coin-blue.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-bronze.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-bronze.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-bronze.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-bronze.flair-e-blue:hover::after { content: "500 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-bronze.flair-o-blue:hover::after { content: "500 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-bronze.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-bronze.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-bronze.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-bronze.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-bronze.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-e-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-o-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-silver.flair-coin-white.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-e-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-o-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-silver.flair-coin-pale.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-e-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-o-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-silver.flair-coin-blue.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-silver.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-silver.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-silver.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-silver.flair-e-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-silver.flair-o-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-silver.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-silver.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-silver.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-silver.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-silver.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-e-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-o-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-gold.flair-coin-white.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-e-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-o-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-gold.flair-coin-pale.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-e-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-o-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-gold.flair-coin-blue.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-gold.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-gold.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-gold.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-gold.flair-e-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-gold.flair-o-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-gold.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-gold.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-gold.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-gold.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-gold.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-e-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Events Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-o-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Operations Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
+.flair-medal-platinum.flair-coin-white.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-e-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Events Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-o-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Operations Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
+.flair-medal-platinum.flair-coin-pale.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-e-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Events Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-o-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Operations Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
+.flair-medal-platinum.flair-coin-blue.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
+.flair-medal-platinum.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Server Admin Volunteer";}
+.flair-medal-platinum.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Communications Volunteer";}
+.flair-medal-platinum.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Software Development Volunteer";}
+.flair-medal-platinum.flair-e-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Events Volunteer";}
+.flair-medal-platinum.flair-o-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Operations Volunteer";}
+.flair-medal-platinum.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Special Projects Volunteer";}
+.flair-medal-platinum.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
+.flair-medal-platinum.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | Seeding Volunteer";}
+.flair-medal-platinum.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | Twitch Volunteer";}
+.flair-medal-platinum.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | Ambassador Volunteer";}
+.flair-coin-white.flair-a-blue:hover::after { content: "$5/Month Donor | Server Admin Volunteer";}
+.flair-coin-white.flair-c-blue:hover::after { content: "$5/Month Donor | Communications Volunteer";}
+.flair-coin-white.flair-d-blue:hover::after { content: "$5/Month Donor | Software Development Volunteer";}
+.flair-coin-white.flair-e-blue:hover::after { content: "$5/Month Donor | Events Volunteer";}
+.flair-coin-white.flair-o-blue:hover::after { content: "$5/Month Donor | Operations Volunteer";}
+.flair-coin-white.flair-p-blue:hover::after { content: "$5/Month Donor | Special Projects Volunteer";}
+.flair-coin-white.flair-r-blue:hover::after { content: "$5/Month Donor | Records & Accounts Volunteer";}
+.flair-coin-white.flair-s-pale:hover::after { content: "$5/Month Donor | Seeding Volunteer";}
+.flair-coin-white.flair-t-pale:hover::after { content: "$5/Month Donor | Twitch Volunteer";}
+.flair-coin-white.flair-smile-pale:hover::after { content: "$5/Month Donor | Ambassador Volunteer";}
+.flair-coin-pale.flair-a-blue:hover::after { content: "$10/Month Donor | Server Admin Volunteer";}
+.flair-coin-pale.flair-c-blue:hover::after { content: "$10/Month Donor | Communications Volunteer";}
+.flair-coin-pale.flair-d-blue:hover::after { content: "$10/Month Donor | Software Development Volunteer";}
+.flair-coin-pale.flair-e-blue:hover::after { content: "$10/Month Donor | Events Volunteer";}
+.flair-coin-pale.flair-o-blue:hover::after { content: "$10/Month Donor | Operations Volunteer";}
+.flair-coin-pale.flair-p-blue:hover::after { content: "$10/Month Donor | Special Projects Volunteer";}
+.flair-coin-pale.flair-r-blue:hover::after { content: "$10/Month Donor | Records & Accounts Volunteer";}
+.flair-coin-pale.flair-s-pale:hover::after { content: "$10/Month Donor | Seeding Volunteer";}
+.flair-coin-pale.flair-t-pale:hover::after { content: "$10/Month Donor | Twitch Volunteer";}
+.flair-coin-pale.flair-smile-pale:hover::after { content: "$10/Month Donor | Ambassador Volunteer";}
+.flair-coin-blue.flair-a-blue:hover::after { content: "$25/Month Donor | Server Admin Volunteer";}
+.flair-coin-blue.flair-c-blue:hover::after { content: "$25/Month Donor | Communications Volunteer";}
+.flair-coin-blue.flair-d-blue:hover::after { content: "$25/Month Donor | Software Development Volunteer";}
+.flair-coin-blue.flair-e-blue:hover::after { content: "$25/Month Donor | Events Volunteer";}
+.flair-coin-blue.flair-o-blue:hover::after { content: "$25/Month Donor | Operations Volunteer";}
+.flair-coin-blue.flair-p-blue:hover::after { content: "$25/Month Donor | Special Projects Volunteer";}
+.flair-coin-blue.flair-r-blue:hover::after { content: "$25/Month Donor | Records & Accounts Volunteer";}
+.flair-coin-blue.flair-s-pale:hover::after { content: "$25/Month Donor | Seeding Volunteer";}
+.flair-coin-blue.flair-t-pale:hover::after { content: "$25/Month Donor | Twitch Volunteer";}
+.flair-coin-blue.flair-smile-pale:hover::after { content: "$25/Month Donor | Ambassador Volunteer";}
+.flair-a-blue:hover::after { content: "Server Admin Volunteer";}
+.flair-c-blue:hover::after { content: "Communications Volunteer";}
+.flair-d-blue:hover::after { content: "Software Development Volunteer";}
+.flair-e-blue:hover::after { content: "Events Volunteer";}
+.flair-o-blue:hover::after { content: "Operations Volunteer";}
+.flair-p-blue:hover::after { content: "Special Projects Volunteer";}
+.flair-r-blue:hover::after { content: "Records & Accounts Volunteer";}
+.flair-s-pale:hover::after { content: "Seeding Volunteer";}
+.flair-t-pale:hover::after { content: "Twitch Volunteer";}
+.flair-smile-pale:hover::after { content: "Ambassador Volunteer";}
+
+/* ====================================
+=========== $Custom Flair =============
+==================================== */
+
+/* LINK TO QUICK GUIDE */
+/* custom flair css and mouse-over text, for volunteers with 2 or more badges, or bronze or higher volunteer level */
+
+/* REDDIT-ID (BATTLELOG-ID) */
 
 
-.flair-admin.flair-events.flair-bronze-star::after { content: url(%%admin%%) url(%%events%%) url(%%bronze-star%%); } /* DotGaming (BaconBagel) */
-.flair-admin.flair-team-lead.flair-bronze-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%bronze-star%%); } /* CombyMcBeardz (Comby_McBeardz) */
-.flair-accounting.flair-project-lead.flair-bronze-star::after { content: url(%%accounting%%) url(%%project-lead%%) url(%%bronze-star%%); } /* nofear1056 (Jester345) */
-.flair-team-lead.flair-gold-star::after { content: url(%%team-lead%%) url(%%gold-star%%); } /* jhogan (Adama42) - special code to bypass founder issue.koz */
-.flair-special.flair-red-star::after { content: url(%%special%%) url(%%red-star%%); } /* club_med */
-.flair-admin.flair-seeder::after { content: url(%%admin%%) url(%%seeder%%); } /* Xythar12 (Xythar) */ 
-.flair-admin.flair-team-lead.flair-accounting.flair-silver-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%accounting%%) url(%%silver-star%%); } /* Ratdart (Ratdart88) */
-.flair-developer.flair-seeder::after { content: url(%%developer%%) url(%%seeder%%); } /* txapollo243 (txapollo342) */
-.flair-admin.flair-special.flair-seeder::after { content: url(%%admin%%) url(%%special%%) url(%%seeder%%); } /* RiseOtalic (FulIMetal) */
-.flair-events.flair-operations.flair-blue-star::after { content: url(%%events%%) url(%%operations%%) url(%%blue-star%%); } /* Smileynulk (Smileynulk) */
-.flair-admin.flair-seeder.flair-red-star::after { content: url(%%admin%%) url(%%seeder%%) url(%%red-star%%); } /* FullMetaI (FulIMetal) */
-.flair-accounting.flair-blue-star::after { content: url(%%accounting%%) url(%%blue-star%%); } /* lax4life001 (lax4life001) */
-.flair-admin.flair-team-lead.flair-communications.flair-bronze-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%communications%%) url(%%bronze-star%%); } /* DJ_MD9 (-vE-DJ_MD9) */
-.flair-seeder.flair-red-star::after { content: url(%%seeder%%) url(%%red-star%%); } /* PatheticShot (PatheticShot) */
-.flair-admin.flair-accounting.flair-blue-star::after { content: url(%%admin%%) url(%%accounting%%) url(%%blue-star%%); } /* Xythar12 (Xythar) */
-.flair-team-lead.flair-operations.flair-blue-star::after { content: url(%%team-lead%%) url(%%operations%%) url(%%blue-star%%); } /* Draegerr (Draeger) */
-.flair-communications.flair-red-star::after { content: url(%%communications%%) url(%%red-star%%); } /* KiriONE (KiriONE) */
-.flair-accounting.flair-seeder.flair-red-star::after { content: url(%%accounting%%) url(%%seeder%%) url(%%red-star%%) ; } /* whywipe (I_never_wipe) */
-.flair-team-lead.flair-developer.flair-red-star::after { content: url(%%team-lead%%) url(%%developer%%) url(%%red-star%%); } /* lonely_jaguar (analytalica) */
-.flair-events.flair-seeder.flair::after { content: url(%%events%%) url(%%seeder%%); } /* SIothies (Ouchiess) */
-.flair-team-lead.flair-special.flair-blue-star::after { content: url(%%team-lead%%) url(%%special%%) url(%%blue-star%%); } /* avacado77 */
-.flair-team-lead.flair-accounting.flair-seeder.flair-red-star::after { content: url(%%team-lead%%) url(%%accounting%%) url(%%seeder%%) url(%%red-star%%); } /* Melloline (Melloline1) */
-.flair-operations.flair-team-lead.flair-red-star::after { content: url(%%operations%%) url(%%team-lead%%) url(%%red-star%%); }/* jmurrell (Mish_poLy) */
-.flair-project-lead.flair-commendation.flair-red-star::after { content: url(%%project-lead%%) url(%%commendation%%) url(%%red-star%%); }/* The_War_Machine (iTheiWarmachinei) */
-.flair-admin.flair-team-lead.flair-red-star::after { content: url(%%admin%%) url(%%team-lead%%) url(%%red-star%%); } /* soccernamlak (soccernamlak) */
-.flair-operations.flair-seeder.flair-bronze-star::after { content: url(%%operations%%) url(%%seeder%%) url(%%bronze-star%%); } /* lebeauc (Triplet-Threat) */
-/* RANKS */
+/* daveden123 (daveden123) */
+.flair-medal-blue.flair-a-blue.flair-e-bronze:hover::after { content: "250 cumulative donor/volunteer credits | Server Admin Volunteer | Events Project Lead"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-blue.flair-a-blue.flair-e-bronze::after { content:  url(%%medal-blue%%);background: url(%%multi-sprites%%) 100% -198px no-repeat; padding-right: 34px;}
 
-.flair-colonel{background: url(%%colonel%%) -3px 5px no-repeat;}
-.flair-private, .flair-sergeant, .flair-lieutenant, .flair-captain, .flair-major, .flair-lt-colonel, .flair-general, .flair-msergeant {
-    background: url(%%ranks%%) 3px 1px no-repeat;
-}
+/* Xythar12 (Xythar) */ 
+.flair-medal-blue.flair-a-blue.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | Server Admin Volunteer | Records & Accounts Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-blue.flair-a-blue.flair-r-blue:after {background: url(%%multi-sprites%%) 100% -22px no-repeat; padding-right: 34px;}
 
-.flair-sergeant { background-position: 3px -39px; }
-.flair-lieutenant { background-position: 3px -79px; }
-.flair-captain { background-position: 3px -117px; }
-.flair-major { background-position: 3px -157px; }
-.flair-lt-colonel { background-position: 3px -196px; }
-.flair-general { background-position: 3px -239px; }
-.flair-msergeant { background-position: 3px -267px; }
+/* silentium90 (silentium90) */ 
+.flair-c-bronze:hover::after { content: "Communications Project Lead";}
 
-/* DICE and EA employees */
+/* Ratdart (RatDart88) */
+.flair-medal-silver.flair-r-blue.flair-e-silver:hover::after { content: "1000 cumulative donor/volunteer credits | Records & Accounts Volunteer | Events Team Lead"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-silver.flair-r-blue.flair-e-silver::after { content:  url(%%medal-silver%%);background: url(%%multi-sprites%%) 100% -44px no-repeat; padding-right: 34px;}
 
-.id-t2_5687g::before
-{ content: ''; display: inline-block; width: 32px; height: 10px; background: url(%%badges%%) 0 0 no-repeat; }
+/* jhogan (Adama42) */ 
+.flair-medal-gold.flair-coin-blue.flair-blank-gold:hover::after { content: "Lots of donor/volunteer credits | $25/month donor | Community Lead"}
 
-/* Shows image displaying all flair */
-.linefield.flair-jump::after {
-    display: block;
-    content: url(%%flairhelp%%);
-}
+/* Smileynulk (Smileynulk) */ 
+.flair-medal-blue.flair-o-blue.flair-e-blue:hover::after { content: "250 cumulative donor/volunteer credits | Operations Volunteer | Events Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-blue.flair-o-blue.flair-e-blue::after { content:  url(%%medal-blue%%);background: url(%%multi-sprites%%) 100% -66px no-repeat; padding-right: 34px;}
 
-/* Link Flair */
+/* jmurrell (Mish_poLy) */
+.flair-medal-pale.flair-coin-white.flair-o-silver:hover::after { content: "100 cumulative donor/volunteer credits | $5/month donor | Operations Lead"}
+
+/* Melloline  (Melloline1) */
+.flair-medal-pale.flair-s-bronze.flair-r-silver:hover::after { content: "100 cumulative donor/volunteer credits | Seeding Project Lead | Records & Accounts Team Lead"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-pale.flair-s-bronze.flair-r-silver::after { content:  url(%%medal-pale%%); background: url(%%multi-sprites%%) 100% -88px no-repeat; padding-right: 34px;}
+
+/* whywipe (I_never_wipe) */
+.flair-medal-pale.flair-s-pale.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | Seeding Volunteer | Records & Accounts Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-pale.flair-s-pale.flair-r-blue::after { content:  url(%%medal-pale%%);background: url(%%multi-sprites%%) 100% -110px no-repeat; padding-right: 34px;}
+
+/* avocado77 (avocado77) */
+.flair-medal-blue.flair-coin-pale.flair-p-silver:hover::after { content: "250 cumulative donor/volunteer credits | $10/month donor | Special Projects Lead"}
+
+/* lonely_jaguar (analytalica) */
+.flair-medal-bronze.flair-d-silver:hover::after { content: "500 cumulative donor/volunteer credits | Software Development Team Lead";}
+
+/* zboarderz (Z0NED42) */
+.flair-s-pale.flair-r-blue:hover::after { content: "Seeding Team Volunteer | Records & Accounts Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-s-pale.flair-r-blue:after {background: url(%%multi-sprites%%) 100% -110px no-repeat; padding-right: 34px;}
+
+/* UGTA	(Webs961) */
+.flair-medal-bronze.flair-coin-pale.flair-p-bronze:hover::after { content: "500 cumulative donor/volunteer credits | $10/month donor | Special Projects Project Lead"}
+
+/* mimicthefrench (mimicthefrench) */
+.flair-medal-blue.flair-a-blue.flair-e-blue:hover::after { content: "250 cumulative donor/volunteer credits | Server Admin Volunteer | Events Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-blue.flair-a-blue.flair-e-blue::after { content:  url(%%medal-blue%%);background: url(%%multi-sprites%%) 100% 0px no-repeat; padding-right: 34px;}
+
+/* Ouchiess (SIothie) */
+.flair-medal-pale.flair-o-blue.flair-e-bronze:hover::after { content: "100 cumulative donor/volunteer credits | Operations Volunteer | Events Project Lead"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-pale.flair-o-blue.flair-e-bronze::after { content:  url(%%medal-pale%%); background: url(%%multi-sprites%%) 100% -220px no-repeat; padding-right: 34px;}
+
+/* maddiethebaddie(Maddiethebaddie)  */
+.flair-medal-white.flair-c-blue.flair-e-blue:hover::after { content: "50 cumulative donor/volunteer credits | Communications Volunteer | Events Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-white.flair-c-blue.flair-e-blue::after {content: url(%%medal-white%%); background: url(%%multi-sprites%%) 100% -154px no-repeat; padding-right: 34px;}
+
+/* soccernamlak	(soccernamlak)	*/
+.flair-medal-pale.flair-a-silver:hover::after {content: "100 cumulative donor/volunteer credits | Server Admin Team Lead"; background: none; padding-left: 2px; padding-right: 0;}
+
+/* FulIMetal	(FullMetaI)		*/
+.flair-medal-pale.flair-a-blue.flair-e-blue:hover::after { content: "100 cumulative donor/volunteer credits | Server Admin Volunteer | Events Volunteer"; background: none; padding-left: 2px; padding-right: 0;}
+.flair-medal-pale.flair-a-blue.flair-e-blue::after { content:  url(%%medal-pale%%);background: url(%%multi-sprites%%) 100% 0px no-repeat; padding-right: 34px;}
+
+/* Add custom flair above this line */
+
+/* Example from Quick-Guide */
+/* BattleLogName (RedditName) */
+.flair-medal-pale.flair-coin-bronze.flair-s-pale.flair-a-blue:hover::after{ content: "100 cumulative donor/volunteer credits | $50/month donor| Seeding Team Volunteer | Sever Admin Volunteer"; background: none; padding-left: 2px; padding-right: 0}
+.flair-medal-pale.flair-coin-bronze.flair-s-pale.flair-a-blue::after { content: url(%%medal-pale%%) url(%%coin-bronze%%); background: url(%%multi-sprites%%) 100% -176px no-repeat; padding-right: 34px}
+
+
+
+
+/* Link Flair */  
 .linkflair-announce .linkflairlabel {
     border: 0;
     background-color: transparent;
@@ -889,7 +1100,13 @@ body:not(.res-nightmode) .footer.rounded {
     color: #e59400;
     font-size: inherit;
     text-shadow: 1px 1px 3px #ccc;
-
+}
+.linkflair-feedback .linkflairlabel {
+    border: 0;
+    background-color: transparent;
+    color: #FF007B;
+    font-size: inherit;
+    text-shadow: 1px 1px 3px #ccc;
 }
 body:not(.res-nightmode) .linkflairlabel + a.title {
     color: orangered !important;
@@ -1009,7 +1226,7 @@ body:not(.res-nightmode) .usertext-body p > code {
     width: auto;
     z-index: 99;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     position: absolute;
     top: 164px; right: 330px;
     background: #F5A802;
@@ -1061,6 +1278,10 @@ Hides the button for subscribers
 body.subscriber .side .md > ol > li:first-child a {
     display: none;
 }
+body:not(.subscriber) .side .md > ol > li:first-child {
+	position: absolute;
+	right: -27px;
+}
 body:not(.subscriber) .side .md > ol > li:first-child a {
     background-color: #9E2C2C;
     background-image: -webkit-linear-gradient(top,#9E2C2C,#752020);
@@ -1070,7 +1291,6 @@ body:not(.subscriber) .side .md > ol > li:first-child a {
     border: 1px solid #4C535D;
     position: absolute;
     margin-top: 45px;
-    left: 662px;
     width: 297px;
     text-align: center;
     padding: 5px 0;
@@ -1080,9 +1300,6 @@ body:not(.subscriber) .side .md > ol > li:first-child a {
     letter-spacing: -1px;
     line-height: 29px;
     height: 29px;
-}
-body:not(.subscriber).comments-page .side .md > ol > li:first-child a {
-    left: 508px;
 }
 body:not(.subscriber) .side .md > ol > li:first-child a:hover {
     text-decoration: underline;
@@ -1166,33 +1383,3 @@ body:not(.res-nightmode) #header {
 
 /* Removal of other sub choices in Submit a link*/
 .submit-page #reddit-field { display: none; }
-
-
-
-/* Hover over flair to show team names */
-
-/* Canadian_GTR */
-.flair-admin.flair-accounting.flair-seeder:hover:before { 
-    position: absolute;
-    display: block;
-    list-style: none;
-    z-index: 1000;
-    opacity:0.9;
-width: 300px;
-
-    padding: 5px;
-    border: 1px solid #333;
-    background-color: white;
-    content:  url(%%admin%%)" Admin  "
-
-              url(%%accounting%%)"  Accounting " 
-
-              url(%%seeder%%)"  Seeder";
-
-    text-align: center;
-    font-size: 11px;
-    font-weight: bold;
-    margin-left: 25px;
-    margin-top: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
