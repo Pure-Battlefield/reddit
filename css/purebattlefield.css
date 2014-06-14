@@ -409,7 +409,6 @@ a[href$='#special']:after { content: ""; background: url(%%p-sprites%%) 0px 0px 
 a[href$='#accounting']::after { content: ""; background: url(%%r-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
 a[href$='#seeder']::after { content: ""; background: url(%%s-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
 a[href$='#blank-gold']::after { content: ""; background: url(%%blank-sprites%%) 0px -88px no-repeat; padding-left: 18px; }
-a[href$='#twitch']::after { content: ""; background: url(%%t-sprites%%) 0px 0px no-repeat; padding-left: 18px; }
 a[href$='#c-silver']::after { content: ""; background: url(%%c-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
 a[href$='#c-bronze']::after { content: ""; background: url(%%c-sprites%%) 0px -22px no-repeat; padding-left: 18px; margin-left: 3px; }
 a[href$='#e-silver']::after { content: ""; background: url(%%e-sprites%%) 0px -44px no-repeat; padding-left: 18px; margin-left: 3px; }
@@ -674,8 +673,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-white.flair-coin-white.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-white.flair-coin-white.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-white.flair-coin-white.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-white.flair-coin-white.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-white.flair-coin-white.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-white.flair-coin-pale.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-white.flair-coin-pale.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-white.flair-coin-pale.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -684,8 +681,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-white.flair-coin-pale.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-white.flair-coin-pale.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-white.flair-coin-pale.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-white.flair-coin-pale.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-white.flair-coin-pale.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-white.flair-coin-blue.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-white.flair-coin-blue.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-white.flair-coin-blue.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -694,8 +689,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-white.flair-coin-blue.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-white.flair-coin-blue.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-white.flair-coin-blue.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-white.flair-coin-blue.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-white.flair-coin-blue.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-white.flair-a-blue:hover::after { content: "50 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-white.flair-c-blue:hover::after { content: "50 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-white.flair-d-blue:hover::after { content: "50 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -704,8 +697,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-white.flair-p-blue:hover::after { content: "50 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-white.flair-r-blue:hover::after { content: "50 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-white.flair-s-pale:hover::after { content: "50 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-white.flair-t-pale:hover::after { content: "50 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-white.flair-smile-pale:hover::after { content: "50 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-medal-pale.flair-coin-white.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
 .flair-medal-pale.flair-coin-white.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
 .flair-medal-pale.flair-coin-white.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
@@ -714,8 +705,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-pale.flair-coin-white.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-pale.flair-coin-white.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-pale.flair-coin-white.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-pale.flair-coin-white.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-pale.flair-coin-white.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-pale.flair-coin-pale.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-pale.flair-coin-pale.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-pale.flair-coin-pale.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -724,8 +713,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-pale.flair-coin-pale.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-pale.flair-coin-pale.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-pale.flair-coin-pale.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-pale.flair-coin-pale.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-pale.flair-coin-pale.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-pale.flair-coin-blue.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-pale.flair-coin-blue.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-pale.flair-coin-blue.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -734,8 +721,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-pale.flair-coin-blue.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-pale.flair-coin-blue.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-pale.flair-coin-blue.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-pale.flair-coin-blue.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-pale.flair-coin-blue.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-pale.flair-a-blue:hover::after { content: "100 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-pale.flair-c-blue:hover::after { content: "100 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-pale.flair-d-blue:hover::after { content: "100 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -744,8 +729,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-pale.flair-p-blue:hover::after { content: "100 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-pale.flair-r-blue:hover::after { content: "100 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-pale.flair-s-pale:hover::after { content: "100 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-pale.flair-t-pale:hover::after { content: "100 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-pale.flair-smile-pale:hover::after { content: "100 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-medal-blue.flair-coin-white.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
 .flair-medal-blue.flair-coin-white.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
 .flair-medal-blue.flair-coin-white.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
@@ -754,8 +737,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-blue.flair-coin-white.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-blue.flair-coin-white.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-blue.flair-coin-white.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-blue.flair-coin-white.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-blue.flair-coin-white.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-blue.flair-coin-pale.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-blue.flair-coin-pale.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-blue.flair-coin-pale.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -764,8 +745,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-blue.flair-coin-pale.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-blue.flair-coin-pale.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-blue.flair-coin-pale.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-blue.flair-coin-pale.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-blue.flair-coin-pale.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-blue.flair-coin-blue.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-blue.flair-coin-blue.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-blue.flair-coin-blue.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -774,8 +753,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-blue.flair-coin-blue.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-blue.flair-coin-blue.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-blue.flair-coin-blue.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-blue.flair-coin-blue.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-blue.flair-coin-blue.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-blue.flair-a-blue:hover::after { content: "250 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-blue.flair-c-blue:hover::after { content: "250 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-blue.flair-d-blue:hover::after { content: "250 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -784,8 +761,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-blue.flair-p-blue:hover::after { content: "250 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-blue.flair-r-blue:hover::after { content: "250 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-blue.flair-s-pale:hover::after { content: "250 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-blue.flair-t-pale:hover::after { content: "250 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-blue.flair-smile-pale:hover::after { content: "250 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-medal-bronze.flair-coin-white.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
 .flair-medal-bronze.flair-coin-white.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
 .flair-medal-bronze.flair-coin-white.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
@@ -794,8 +769,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-bronze.flair-coin-white.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-bronze.flair-coin-white.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-bronze.flair-coin-white.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-bronze.flair-coin-white.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-bronze.flair-coin-white.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-bronze.flair-coin-pale.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-bronze.flair-coin-pale.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-bronze.flair-coin-pale.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -804,8 +777,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-bronze.flair-coin-pale.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-bronze.flair-coin-pale.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-bronze.flair-coin-pale.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-bronze.flair-coin-pale.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-bronze.flair-coin-pale.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-bronze.flair-coin-blue.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-bronze.flair-coin-blue.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-bronze.flair-coin-blue.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -814,8 +785,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-bronze.flair-coin-blue.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-bronze.flair-coin-blue.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-bronze.flair-coin-blue.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-bronze.flair-coin-blue.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-bronze.flair-coin-blue.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-bronze.flair-a-blue:hover::after { content: "500 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-bronze.flair-c-blue:hover::after { content: "500 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-bronze.flair-d-blue:hover::after { content: "500 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -824,8 +793,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-bronze.flair-p-blue:hover::after { content: "500 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-bronze.flair-r-blue:hover::after { content: "500 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-bronze.flair-s-pale:hover::after { content: "500 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-bronze.flair-t-pale:hover::after { content: "500 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-bronze.flair-smile-pale:hover::after { content: "500 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-medal-silver.flair-coin-white.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
 .flair-medal-silver.flair-coin-white.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
 .flair-medal-silver.flair-coin-white.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
@@ -834,8 +801,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-silver.flair-coin-white.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-silver.flair-coin-white.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-silver.flair-coin-white.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-silver.flair-coin-white.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-silver.flair-coin-white.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-silver.flair-coin-pale.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-silver.flair-coin-pale.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-silver.flair-coin-pale.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -844,8 +809,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-silver.flair-coin-pale.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-silver.flair-coin-pale.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-silver.flair-coin-pale.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-silver.flair-coin-pale.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-silver.flair-coin-pale.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-silver.flair-coin-blue.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-silver.flair-coin-blue.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-silver.flair-coin-blue.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -854,8 +817,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-silver.flair-coin-blue.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-silver.flair-coin-blue.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-silver.flair-coin-blue.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-silver.flair-coin-blue.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-silver.flair-coin-blue.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-silver.flair-a-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-silver.flair-c-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-silver.flair-d-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -864,8 +825,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-silver.flair-p-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-silver.flair-r-blue:hover::after { content: "1000 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-silver.flair-s-pale:hover::after { content: "1000 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-silver.flair-t-pale:hover::after { content: "1000 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-silver.flair-smile-pale:hover::after { content: "1000 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-medal-gold.flair-coin-white.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
 .flair-medal-gold.flair-coin-white.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
 .flair-medal-gold.flair-coin-white.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
@@ -874,8 +833,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-gold.flair-coin-white.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-gold.flair-coin-white.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-gold.flair-coin-white.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-gold.flair-coin-white.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-gold.flair-coin-white.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-gold.flair-coin-pale.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-gold.flair-coin-pale.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-gold.flair-coin-pale.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -884,8 +841,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-gold.flair-coin-pale.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-gold.flair-coin-pale.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-gold.flair-coin-pale.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-gold.flair-coin-pale.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-gold.flair-coin-pale.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-gold.flair-coin-blue.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-gold.flair-coin-blue.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-gold.flair-coin-blue.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -894,8 +849,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-gold.flair-coin-blue.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-gold.flair-coin-blue.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-gold.flair-coin-blue.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-gold.flair-coin-blue.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-gold.flair-coin-blue.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-gold.flair-a-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-gold.flair-c-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-gold.flair-d-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -904,8 +857,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-gold.flair-p-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-gold.flair-r-blue:hover::after { content: "2500 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-gold.flair-s-pale:hover::after { content: "2500 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-gold.flair-t-pale:hover::after { content: "2500 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-gold.flair-smile-pale:hover::after { content: "2500 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-medal-platinum.flair-coin-white.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Server Admin Volunteer";}
 .flair-medal-platinum.flair-coin-white.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Communications Volunteer";}
 .flair-medal-platinum.flair-coin-white.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Software Development Volunteer";}
@@ -914,8 +865,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-platinum.flair-coin-white.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Special Projects Volunteer";}
 .flair-medal-platinum.flair-coin-white.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-platinum.flair-coin-white.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Seeding Volunteer";}
-.flair-medal-platinum.flair-coin-white.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Twitch Volunteer";}
-.flair-medal-platinum.flair-coin-white.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $5/Month Donor | Ambassador Volunteer";}
 .flair-medal-platinum.flair-coin-pale.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Server Admin Volunteer";}
 .flair-medal-platinum.flair-coin-pale.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Communications Volunteer";}
 .flair-medal-platinum.flair-coin-pale.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Software Development Volunteer";}
@@ -924,8 +873,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-platinum.flair-coin-pale.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Special Projects Volunteer";}
 .flair-medal-platinum.flair-coin-pale.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-platinum.flair-coin-pale.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Seeding Volunteer";}
-.flair-medal-platinum.flair-coin-pale.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Twitch Volunteer";}
-.flair-medal-platinum.flair-coin-pale.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $10/Month Donor | Ambassador Volunteer";}
 .flair-medal-platinum.flair-coin-blue.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Server Admin Volunteer";}
 .flair-medal-platinum.flair-coin-blue.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Communications Volunteer";}
 .flair-medal-platinum.flair-coin-blue.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Software Development Volunteer";}
@@ -934,8 +881,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-platinum.flair-coin-blue.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Special Projects Volunteer";}
 .flair-medal-platinum.flair-coin-blue.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Records & Accounts Volunteer";}
 .flair-medal-platinum.flair-coin-blue.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Seeding Volunteer";}
-.flair-medal-platinum.flair-coin-blue.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Twitch Volunteer";}
-.flair-medal-platinum.flair-coin-blue.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | $25/Month Donor | Ambassador Volunteer";}
 .flair-medal-platinum.flair-a-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Server Admin Volunteer";}
 .flair-medal-platinum.flair-c-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Communications Volunteer";}
 .flair-medal-platinum.flair-d-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Software Development Volunteer";}
@@ -944,8 +889,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-medal-platinum.flair-p-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Special Projects Volunteer";}
 .flair-medal-platinum.flair-r-blue:hover::after { content: "5000 cumulative donor/volunteer credits | Records & Accounts Volunteer";}
 .flair-medal-platinum.flair-s-pale:hover::after { content: "5000 cumulative donor/volunteer credits | Seeding Volunteer";}
-.flair-medal-platinum.flair-t-pale:hover::after { content: "5000 cumulative donor/volunteer credits | Twitch Volunteer";}
-.flair-medal-platinum.flair-smile-pale:hover::after { content: "5000 cumulative donor/volunteer credits | Ambassador Volunteer";}
 .flair-coin-white.flair-a-blue:hover::after { content: "$5/Month Donor | Server Admin Volunteer";}
 .flair-coin-white.flair-c-blue:hover::after { content: "$5/Month Donor | Communications Volunteer";}
 .flair-coin-white.flair-d-blue:hover::after { content: "$5/Month Donor | Software Development Volunteer";}
@@ -954,8 +897,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-coin-white.flair-p-blue:hover::after { content: "$5/Month Donor | Special Projects Volunteer";}
 .flair-coin-white.flair-r-blue:hover::after { content: "$5/Month Donor | Records & Accounts Volunteer";}
 .flair-coin-white.flair-s-pale:hover::after { content: "$5/Month Donor | Seeding Volunteer";}
-.flair-coin-white.flair-t-pale:hover::after { content: "$5/Month Donor | Twitch Volunteer";}
-.flair-coin-white.flair-smile-pale:hover::after { content: "$5/Month Donor | Ambassador Volunteer";}
 .flair-coin-pale.flair-a-blue:hover::after { content: "$10/Month Donor | Server Admin Volunteer";}
 .flair-coin-pale.flair-c-blue:hover::after { content: "$10/Month Donor | Communications Volunteer";}
 .flair-coin-pale.flair-d-blue:hover::after { content: "$10/Month Donor | Software Development Volunteer";}
@@ -964,8 +905,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-coin-pale.flair-p-blue:hover::after { content: "$10/Month Donor | Special Projects Volunteer";}
 .flair-coin-pale.flair-r-blue:hover::after { content: "$10/Month Donor | Records & Accounts Volunteer";}
 .flair-coin-pale.flair-s-pale:hover::after { content: "$10/Month Donor | Seeding Volunteer";}
-.flair-coin-pale.flair-t-pale:hover::after { content: "$10/Month Donor | Twitch Volunteer";}
-.flair-coin-pale.flair-smile-pale:hover::after { content: "$10/Month Donor | Ambassador Volunteer";}
 .flair-coin-blue.flair-a-blue:hover::after { content: "$25/Month Donor | Server Admin Volunteer";}
 .flair-coin-blue.flair-c-blue:hover::after { content: "$25/Month Donor | Communications Volunteer";}
 .flair-coin-blue.flair-d-blue:hover::after { content: "$25/Month Donor | Software Development Volunteer";}
@@ -974,8 +913,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-coin-blue.flair-p-blue:hover::after { content: "$25/Month Donor | Special Projects Volunteer";}
 .flair-coin-blue.flair-r-blue:hover::after { content: "$25/Month Donor | Records & Accounts Volunteer";}
 .flair-coin-blue.flair-s-pale:hover::after { content: "$25/Month Donor | Seeding Volunteer";}
-.flair-coin-blue.flair-t-pale:hover::after { content: "$25/Month Donor | Twitch Volunteer";}
-.flair-coin-blue.flair-smile-pale:hover::after { content: "$25/Month Donor | Ambassador Volunteer";}
 .flair-a-blue:hover::after { content: "Server Admin Volunteer";}
 .flair-c-blue:hover::after { content: "Communications Volunteer";}
 .flair-d-blue:hover::after { content: "Software Development Volunteer";}
@@ -984,8 +921,6 @@ body:not(.res-nightmode) .footer.rounded {
 .flair-p-blue:hover::after { content: "Special Projects Volunteer";}
 .flair-r-blue:hover::after { content: "Records & Accounts Volunteer";}
 .flair-s-pale:hover::after { content: "Seeding Volunteer";}
-.flair-t-pale:hover::after { content: "Twitch Volunteer";}
-.flair-smile-pale:hover::after { content: "Ambassador Volunteer";}
 
 /* ====================================
 =========== $Custom Flair =============
